@@ -1,0 +1,165 @@
+/*++++++++++ Bookmarks Panel (opens on pressing star in URL Bar) ++++++++++*/
+
+/*Reduce Panel Width*/
+#editBookmarkPanel {
+  font-size: var(--panel-font-size);
+  width: 320px /*280*/ !important;
+  margin-top: 6px !important;
+}
+
+#editBMPanel_namePicker {
+  width: 250px !important;
+}
+
+/*Reduce Panel Header Padding*/
+#editBookmarkPanel .panel-header {
+  padding: 4px !important;
+  padding-bottom: 0px !important;
+}
+
+/*Modify Panel Title*/
+#editBookmarkPanelTitle {
+  font-family: "Fira Sans" !important;
+  font-size: 1.15rem !important;
+}
+
+/*Remove Page Snapshot*/
+#editBookmarkPanelInfoArea {
+  display: none !important;
+}
+
+/*Remove Separator*/
+#editBookmarkSeparator {
+  display: none !important;
+}
+
+/*Align ItemsHorizontally*/
+#editBookmarkPanel #editBookmarkPanelRows > vbox {
+  -moz-box-orient: horizontal !important;
+}
+
+:root #editBookmarkPanel #editBMPanel_folderTreeRow {
+  -moz-box-orient: vertical !important;
+}
+
+/*Fix Padding of Content Area*/
+#editBookmarkPanel #editBookmarkPanelRows {
+  padding: 6px !important;
+}
+
+/*Modify labels*/
+#editBookmarkPanel #editBookmarkPanelContent label[control] {
+  font-size: 1.1rem !important;
+  font-family: "Fira Sans" !important;
+  color: #ddd !important;
+  font-variant: petite-caps !important;
+  z-index: 1 !important;
+  position: absolute !important;
+  margin-top: 3px !important;
+  margin-inline: 6px !important;
+}
+
+/*Modify Folder Select Dropdown*/
+#editBMPanel_folderMenuList {
+  background-color: var(--Dark_BackgroundColor) !important;
+  font-family: "Fira Sans" !important;
+  font-size: 1.05rem !important;
+  color: var(--Dark_TextColor) !important;
+  margin-left: -32px !important;
+}
+
+#editBMPanel_folderMenuList .in-menulist {
+  margin-left: 15px !important;
+}
+
+/*Modify Folder tree*/
+#editBMPanel_folderTree {
+  -moz-appearance: none !important;
+  background: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
+  font-size: 1.05rem !important;
+  font-family: "Fira Sans" !important;
+  min-width: 1px !important;
+  border: 0px var(--Dark_BackgroundColor) !important;
+}
+
+/*Dropmarker on folder select dropdown button*/
+dropmarker:not([native]) {
+  transform: scale(0.7) !important;
+}
+
+/*Fix Margins of New Folder Button*/
+#editBookmarkPanel #editBMPanel_newFolderBox {
+  margin-bottom: 10px !important;
+}
+
+#editBookmarkPanel #editBMPanel_newFolderButton {
+  height: 24px !important;
+  border-radius: 4px !important;
+}
+
+/*Autocomplete list that appears on typing existing tags*/
+#editBMPanel_tagsAutocomplete {
+  padding: 5px !important;
+  background: var(--Dark_BackgroundColor) !important;
+}
+
+/*Modify Tag list*/
+#editBMPanel_tagsSelector {
+  font-family: "Fira Sans" !important;
+  font-size: 1.05rem !important;
+  background: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
+  outline: 0px !important;
+  -moz-appearance: none !important;
+}
+
+/*Modify Tag list checkbox*/
+#editBMPanel_tagsSelector > richlistitem > image {
+  border: 1px solid var(--Dark_TextColor) !important;
+  background: var(--Dark_BackgroundColor) !important;
+  filter: invert(1) !important;
+  opacity: 0.2 !important;
+}
+
+/*Reduce Top Margin of Tags Row, and boxes in Tags + Folder Rows*/
+#editBookmarkPanel #editBMPanel_tagsRow {
+  margin-top: -5px !important;
+}
+
+#editBookmarkPanel #editBMPanel_folderRow > hbox,
+#editBookmarkPanel #editBMPanel_tagsRow > hbox {
+  margin-top: -6px !important;
+}
+
+/*Remove Keywords Row*/
+#editBookmarkPanelBottomContent {
+  display: none !important;
+}
+
+/*Modify background and color of selection*/
+#editBMPanel_namePicker::selection,
+#editBMPanel_tagsField::selection {
+  background-color: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
+}
+
+/*Reduce size of save, remove bookmark, cancel buttons, and move them to the left*/
+#editBookmarkPanelBottomButtons {
+  display: flex;
+  margin: 0 !important;
+  margin-bottom: 5px !important;
+  justify-content: flex-start !important;
+  background: var(--Dark_BackgroundColor) !important;
+  font-size: 1rem !important;
+}
+
+#editBookmarkPanelBottomButtons > button {
+  padding: 5px !important;
+}
+
+/*Modify Label of bottom buttons and new tab button*/
+#editBookmarkPanelBottomButtons label,
+#editBMPanel_newFolderButton label {
+  font-size: 1rem !important;
+}

@@ -1,0 +1,17 @@
+/*+++++ Sanitize Dialog (Opens on hitting clear recent history button) +++++*/
+
+#SanitizeDialog {
+  background: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
+  font-family: "Fira Sans" !important;
+  font-size: 14px !important;
+  margin: 15px !important;
+}
+
+#sanitizeDurationChoice {
+  background: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
+  border: 1px solid var(--Dark_BorderColor) !important;
+  -moz-appearance: none !important;
+  padding: 5px !important;
+}

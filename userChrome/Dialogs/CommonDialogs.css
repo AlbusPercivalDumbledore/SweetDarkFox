@@ -1,0 +1,58 @@
+/*+++++ Common Dialogs +++++*/
+
+@-moz-document url("chrome://global/content/commonDialog.xhtml")
+{
+  * {
+    --checkbox-border-color: var(--Dark_BorderColor) !important;
+    --checkbox-checked-bgcolor: var(--Dark_BackgroundColor) !important;
+    --checkbox-checked-color: var(--Dark_TextColor) !important;
+    --checkbox-checked-hover-bgcolor: var(--Dark_ActiveColor) !important;
+    --checkbox-checked-active-bgcolor: var(--Dark_BackgroundColor) !important;
+    --checkbox-checked-border-color: var(--Dark_ActiveColor) !important;
+    --checkbox-unchecked-bgcolor: var(--Dark_ActiveColor) !important;
+    --checkbox-unchecked-hover-bgcolor: var(--Dark_ActiveColor) !important;
+    --checkbox-unchecked-active-bgcolor: var(--Dark_BackgroundColor) !important;
+  }
+
+  dialog#commonDialog {
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+  }
+
+  #infoTitle {
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  #infoBody {
+    font-size: 1.15rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  #infoBody::selection {
+    background-color: #1a237e !important;
+    color: var(--Dark_TextColor) !important;
+  }
+
+  #checkbox {
+    font-size: 1rem !important;
+    font-family: "Fira Sans" !important;
+    margin-bottom: -10px !important;
+    margin-top: -10px !important;
+    margin-left: 5px !important;
+  }
+
+  #infoContainer {
+    margin-bottom: 0px !important;
+  }
+
+  #titleText {
+    font-size: 1.5rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  .dialog-button-box {
+    margin-bottom: -10px !important;
+    margin-top: -5px !important;
+  }
+}

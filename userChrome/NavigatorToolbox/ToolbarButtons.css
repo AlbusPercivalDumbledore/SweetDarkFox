@@ -1,0 +1,281 @@
+/*+++++ Windows Minimize, Maximize, Close Buttons +++++*/
+
+/*.titlebar-button > .toolbarbutton-icon {
+  height: 10px !important;
+  min-height: 10px !important;
+  width: 10px !important;
+  min-width: 10px !important;
+}
+
+.titlebar-button {
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+  padding-top: 7px !important;
+  background-color: #000 !important;
+}*/
+
+/* macOS style window controls */
+/*https://github.com/aminomancer/uc.css.js/blob/master/uc-tabs-bar.css#L243*/
+
+.titlebar-button {
+  display: -moz-box !important;
+  border: none;
+  margin: 0 !important;
+  padding: 8px 17px;
+  -moz-context-properties: fill, stroke !important;
+  stroke: none !important;
+  fill: none !important;
+}
+
+:root:not([sizemode="maximized"], [inFullscreen])
+  :is(.titlebar-restore, .uc-titlebar-restore),
+:root:is([sizemode="maximized"], [inFullscreen])
+  :is(.titlebar-max, .uc-titlebar-max) {
+  display: none !important;
+}
+
+:root:-moz-window-inactive:not([customizing])
+  .titlebar-buttonbox
+  > toolbarbutton:not(:hover) {
+  list-style-image: url(chrome://userchrome/content/window/inactive.svg) !important;
+}
+
+.titlebar-buttonbox .toolbarbutton-icon {
+  opacity: 1 !important;
+}
+
+.titlebar-button > .toolbarbutton-icon {
+  appearance: none !important;
+  width: 14.3px !important;
+  height: 14.3px !important;
+  stroke: inherit !important;
+}
+
+.titlebar-buttonbox {
+  appearance: none !important;
+}
+
+.titlebar-max,
+.uc-titlebar-max,
+.titlebar-restore,
+.uc-titlebar-restore {
+  appearance: none !important;
+  padding: 0px !important;
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  background-color: transparent !important;
+  list-style-image: url(chrome://userchrome/content/window/maximize.svg) !important;
+  grid-column: 1 !important;
+  order: 1 !important;
+  -moz-box-ordinal-group: 1 !important;
+}
+
+:is(.titlebar-max, .uc-titlebar-max):hover {
+  list-style-image: url(chrome://userchrome/content/window/maximize-hover.svg) !important;
+}
+
+:root:is([sizemode="maximized"], [inFullscreen])
+  :is(.titlebar-max, .uc-titlebar-max):hover,
+:is(.titlebar-restore, .uc-titlebar-restore):hover {
+  list-style-image: url(chrome://userchrome/content/window/maximize-restore.svg) !important;
+}
+
+:is(.titlebar-min, .uc-titlebar-min) {
+  appearance: none !important;
+  padding: 0px !important;
+  /*padding-left: 7px !important;
+  padding-right: 7px !important;*/
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  background-color: transparent !important;
+  list-style-image: url(chrome://userchrome/content/window/minimize.svg) !important;
+  -moz-box-ordinal-group: 2 !important;
+}
+
+:is(.titlebar-min, .uc-titlebar-min):hover {
+  list-style-image: url(chrome://userchrome/content/window/minimize-hover.svg) !important;
+}
+
+.titlebar-close,
+.uc-titlebar-close {
+  appearance: none !important;
+  padding: 0px !important;
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  background-color: transparent !important;
+  list-style-image: url(chrome://userchrome/content/window/close.svg) !important;
+  -moz-box-ordinal-group: 3 !important;
+}
+
+:is(.titlebar-close, .uc-titlebar-close):hover {
+  list-style-image: url(chrome://userchrome/content/window/close-hover.svg) !important;
+}
+
+#TabsToolbar > .titlebar-buttonbox-container {
+  margin-left: 10px !important;
+}
+
+/*+++++ Hide Private Browsing Indicator Icons +++++*/
+
+.private-browsing-indicator,
+#private-mask.private-browsing-indicator {
+  display: none !important;
+}
+
+/*+++++ Change background color of sidebar button, when it is active +++++*/
+
+#sidebar-button[checked] > .toolbarbutton-icon {
+  background-color: inherit !important;
+}
+
+/*+++++ Hide Hamburger Menu Button +++++*/
+#PanelUI-button {
+  /*display: none !important;*/
+  -moz-box-ordinal-group: 0 !important;
+}
+
+/*Scale Down Toolbar Button Icons*/
+
+.toolbarbutton-1 > .toolbarbutton-icon {
+  width: calc(2 * var(--toolbarbutton-inner-padding) + 14px) !important;
+  height: calc(2 * var(--toolbarbutton-inner-padding) + 14px) !important;
+}
+
+.webextension-browser-action > .toolbarbutton-badge-stack > .toolbarbutton-icon,
+.toolbarbutton-1 > .toolbarbutton-badge-stack > .toolbarbutton-icon {
+  height: 14px !important;
+  width: 14px !important;
+}
+
+/*+++++ Scale down Back, Forward, Stop-Reload, New tab, Reopen Closed Tab, Downloads Buttons +++++*/
+
+#nav-bar
+  toolbarbutton:is(#back-button, #forward-button, #stop-button, #reload-button, #nav-bar-overflow-button)
+  > .toolbarbutton-icon,
+#TabsToolbar
+  toolbarbutton:is(#new-tab-button, #tabs-newtab-button)
+  > .toolbarbutton-icon {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+#nav-bar toolbarbutton:is(#stop-button) > .toolbarbutton-icon {
+  width: 16px !important;
+  height: 16px !important;
+  margin-left: 1px !important;
+  margin-right: 1px !important;
+}
+
+#nav-bar
+  toolbarbutton:is(#stop-reload-button > #stop-button, #stop-reload-button
+    > #reload-button)
+  > .toolbarbutton-icon {
+  margin-top: -2px !important;
+}
+
+#_4853d046-c5a3-436b-bc36-220fd935ee1d_-browser-action .toolbarbutton-icon {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+#TabsToolbar
+  toolbarbutton:is(#downloads-button)
+  > .toolbarbutton-badge-stack
+  > box {
+  min-width: 14px !important;
+  min-height: 14px !important;
+  width: 14px !important;
+  height: 14px !important;
+}
+
+/*Scale Down Tracking Protection Icon, change its background when active*/
+.sharing-icon,
+#identity-icon,
+#permissions-granted-icon,
+#tracking-protection-icon,
+#blocked-permissions-container > .blocked-permission-icon {
+  width: 13px !important;
+  height: 13px !important;
+}
+
+#tracking-protection-icon-container {
+  margin-right: 5px !important;
+}
+
+#tracking-protection-icon-box {
+  width: 13px !important;
+  height: 13px !important;
+}
+
+.identity-box-button:hover:active,
+.identity-box-button[open="true"],
+#tracking-protection-icon-container:hover:active,
+#tracking-protection-icon-container[open="true"] {
+  background-color: var(--Dark_ActiveColor) !important;
+}
+
+/*+++++ Invert Colors of RES UrlBar Icon +++++*/
+#pageAction-urlbar-jid1-xufzosoflzsoxg_jetpack {
+  filter: invert(1) !important;
+}
+
+/*Move Overflow menu button to left*/
+#PlacesChevron,
+#nav-bar-overflow-button {
+  list-style-image: url("chrome://global/skin/icons/chevron.svg");
+  -moz-box-ordinal-group: 0 !important;
+}
+
+/*Insert Profile Name before overflow menu*/
+#nav-bar-overflow-button::before {
+  content: "Firefox" !important;
+  text-align: center !important;
+  font-family: Fira Sans !important;
+  padding: 4px !important;
+  border-radius: 2px !important;
+  display: inherit !important;
+  margin-left: 5px !important;
+  color: #fff !important;
+  background: #8f02f1 !important;
+}
+
+/*Logo to replace Hamburger Menu icon*/
+:root:not([chromehidden~="toolbar"]) #PanelUI-menu-button > stack {
+  list-style-image: /*url(chrome://userchrome/content/identity-icons-brand.svg)*/
+    url("fox.png") !important;
+  display: -moz-box;
+  height: 21px !important;
+  width: 25px !important;
+  -moz-box-pack: center !important;
+  fill: #fff !important;
+  border: 1px solid transparent !important;
+}
+:root:not([chromehidden~="toolbar"]) #PanelUI-menu-button image {
+  min-height: 18px !important;
+  margin-top: -2px !important;
+  min-width: 18px !important;
+}
+
+/*Hamburger Menu Label */
+:root:not([chromehidden~="toolbar"]) #PanelUI-menu-button > stack::after {
+  display: -moz-box;
+  content: "Firefox";
+  color: #fff !important;
+  margin-inline-start: 5px !important;
+  margin-inline-end: 15px !important;
+  -moz-box-pack: center !important;
+  -moz-box-orient: vertical !important;
+  font-family: Fira Sans !important;
+  font-weight: bold !important;
+  font-size: 1.05em !important;
+}

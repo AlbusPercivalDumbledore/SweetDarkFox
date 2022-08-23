@@ -1,0 +1,284 @@
+/*+++++ URL BAR +++++*/
+
+/*Centered Text in Urlbar*/
+/*https://github.com/AdamXweb/WhiteSurFirefoxThemeMacOS/blob/master/chrome/WhiteSur/parts/headerbar-urlbar.css*/
+/*#urlbar:not([focused]) #urlbar-input{ text-align: center !important; }*/
+
+#urlbar-input {
+  transition: transform 0.2s linear;
+  transform: translateX(50%);
+  top: 4px;
+  position: absolute;
+  width: 50%;
+  text-align: center !important;
+}
+
+#urlbar[focused] #urlbar-input {
+  position: absolute;
+  transform: translateX(0);
+  transition: all 0.2s ease;
+  width: 100%;
+  text-align: left !important;
+}
+
+/*Specify Font Face, Size, and Color for Urlbar Input*/
+.urlbar-input-box,
+#identity-box,
+[anonid="urlbar-go-button"],
+#urlbar {
+  font-size: 1.05rem !important;
+  font-family: "Fira Sans" !important;
+  /*color: var(--toolbar-color) !important;*/
+}
+
+#urlbar > #urlbar-background {
+  display: none !important;
+}
+
+/*Fix Urlbar text being cut on bottom*/
+.urlbar-input-box {
+  margin-top: -2px !important;
+}
+
+/*Urlbar Input Selection Color*/
+#urlbar-input::selection {
+  background-color: #1a237e !important;
+  color: var(--Dark_TextColor) !important;
+}
+
+/* Remove 'Search with google or enter address' from url bar */
+#urlbar-input::placeholder {
+  color: transparent !important;
+}
+
+/* Hide buttons from URL Bar (pocket button, Extension Indicator when using an addon for custom startpage)*/
+#pageActionButton,
+#pocket-button-box,
+#extension-icon,
+#identity-icon,
+#identity-icon-label,
+#identity-box,
+#pocket-button,
+#pageAction-panel-pocket {
+  display: none !important;
+}
+
+/* Page action-buttons "slide in" when cursor is on top of them and don't reserve space when not used */
+/* https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/page_action_buttons_on_hover.css */
+
+#page-action-buttons {
+  padding-inline-start: 0px;
+}
+
+.urlbar-page-action:not(#star-button-box) {
+  margin-inline-end: -15px;
+  opacity: 0;
+  transition: margin-inline-end 100ms linear, opacity 200ms linear;
+}
+
+#page-action-buttons:hover > .urlbar-page-action,
+.urlbar-page-action[open],
+.urlbar-page-action[open] ~ .urlbar-page-action {
+  opacity: 1;
+  margin-inline-end: 0px !important;
+}
+
+/*+++++ URL Bar Search Mode Indicator +++++*/
+
+/*Modify background and color*/
+#urlbar-search-mode-indicator {
+  background-color: var(--Dark_ActiveColor) !important;
+  color: var(--Dark_TextColor) !important;
+  font-size: 0.9rem !important;
+}
+
+#urlbar-search-mode-indicator-close:hover {
+  background-color: transparent !important;
+}
+
+/*Reduce Size and Inline Margin of Container Indicator */
+#userContext-icons,
+#urlbar-zoom-button {
+  margin-inline: 2px !important;
+}
+
+#userContext-indicator {
+  height: 14px !important;
+  width: 14px !important;
+  margin-inline-start: 2px !important;
+}
+
+#userContext-label {
+  font-size: 1rem !important;
+  margin-top: 1px !important;
+}
+
+/*UrlBar Zoom Button*/
+
+#urlbar-zoom-button {
+  padding: 4px !important;
+  background-color: var(--Dark_ActiveColor) !important;
+}
+
+#urlbar-zoom-button > .toolbarbutton-text {
+  margin-top: 1px !important;
+}
+
+/*+++++ URL BAR RESULTS VIEW +++++*/
+
+/*Rounded corners on Bottom*/
+.urlbarView {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  box-shadow: 0 5px 5px -5px var(--Dark_ActiveColor),
+    -5px 0 5px -5px var(--Dark_ActiveColor),
+    5px 0 5px -5px var(--Dark_ActiveColor) !important;
+}
+
+/*Remove Padding on rows*/
+.urlbarView-row {
+  fill: currentColor;
+  fill-opacity: var(--urlbar-icon-fill-opacity);
+  padding-block: 0 !important;
+}
+
+/*Urlbar Quickview*/
+.urlbarView-row[dynamicType="quickactions"] .urlbarView-quickaction-row {
+    box-shadow: 0px 0px 4px rgba(27, 27, 27, 0.9), 0px 0px 6px rgba(27, 27, 27, 0.5) !important;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: .5em;
+    margin-top: 2px;
+    position: relative;
+}
+
+/*Specify Color, font size and face for results*/
+.urlbarView-results {
+  -moz-appearance: none !important;
+  font-size: 1.05rem !important;
+  font-family: "Fira Sans" !important;
+  color: rgb(221, 226, 234) !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+/*Remove 'Search with'*/
+.urlbarView-row[type="search"] .urlbarView-action {
+  display: none !important;
+}
+
+/*Replace 'Firefox Suggest'*/
+.urlbarView-row[label]::before {
+  content: "Similar Bookmarks and Open Tabs" !important;
+  display: block;
+  position: absolute;
+  top: -1.27em;
+  margin-inline-start: var(--urlbarView-item-inline-padding);
+  font-size: 1em !important;
+  opacity: 0.7 !important;
+  pointer-events: none;
+}
+
+/*Modify '- View'*/
+/*.urlbarView-title-separator::before {
+  content: "\2014";
+  margin: 0 0.4em;
+  opacity: 1 !important;
+}*/
+
+.urlbarView-tags,
+.urlbarView-url,
+.urlbarView-title:not(:empty) ~ .urlbarView-action {
+  font-size: 0.95em !important;
+}
+
+/*Increase Left Margin of Title in Url Bar Results*/
+.urlbarView-title {
+  margin-left: 8px !important;
+}
+
+/*Modify color of url in Url Bar Results, and increase left & top margins*/
+.urlbarView-url {
+  -moz-appearance: none !important;
+  font-size: 1.1rem !important;
+  font-family: "Fira Sans" !important;
+  color: #9058f7 /*#b556f9*/ /*#64b5f6*/ !important;
+  margin-left: 5px !important;
+  /*margin-top: 3px !important;*/
+  line-height: 1.1 !important;
+  font-weight: 600 !important;
+}
+
+.urlbarView-url {
+  overflow: hidden;
+  color: var(--urlbar-popup-url-color);
+}
+
+/* Remove 'Try searching with...' */
+.search-one-offs {
+  display: none !important;
+}
+
+/* Remove setting icon from url dropdown */
+.search-panel-one-offs {
+  display: none !important;
+}
+
+/*Make Webpage Favicon in urlbar results smaller*/
+.urlbarView-favicon {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+/*Modify fill color of icon indicating bookmarked page in urlbar results*/
+.urlbarView-type-icon {
+  margin-bottom: -4px;
+  margin-inline-start: 8px !important;
+  fill: #999 !important;
+}
+
+/*URL Bar Results Highlight Background Color*/
+.urlbarView-row-inner {
+  border-right: 5px solid transparent !important;
+  margin-left: 5px !important;
+  border-radius: 0px !important;
+}
+
+.urlbarView-row:not([type="tip"], [type="dynamic"])[selected]
+  > .urlbarView-row-inner:hover {
+  background-color: var(--Dark_BackgroundColor) !important;
+}
+
+.urlbarView-row:not([type="tip"], [type="dynamic"]):hover
+  > .urlbarView-row-inner {
+  background-color: var(--Dark_BackgroundColor) !important;
+}
+
+/*Indicate selected result in urlbar, with a border on the right*/
+.urlbarView-row:not([type="tip"], [type="dynamic"])[selected]
+  > .urlbarView-row-inner {
+  background: var(--Dark_BackgroundColor) !important;
+  border-right: 5px solid #24324d /*1a237e*/ !important;
+}
+
+/* Make urlbar popup appear full size like it did before urlbar re-design */
+/*https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/urlbar_popup_full_width.css*/
+
+.urlbarView {
+  position: absolute !important;
+  margin: 0px !important;
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+  width: 65vw !important;
+  border: 1px solid var(--Dark_ActiveColor) !important;
+  border-top: none !important;
+  top: var(--urlbar-toolbar-height);
+  background-color: var(--Dark_BackgroundColor) !important;
+  z-index: 4;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+#urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
+  border-top: none !important;
+}

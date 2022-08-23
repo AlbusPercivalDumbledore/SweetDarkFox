@@ -1,0 +1,34 @@
+/*+++++ 'Create New Profile' dialog +++++*/
+
+@-moz-document url("chrome://mozapps/content/profile/createProfileWizard.xhtml")
+{
+  wizard {
+    color: var(--Dark_TextColor) !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.2rem !important;
+  }
+
+  .wizard-header {
+    color: var(--Dark_TextColor) !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    border-bottom: 0px !important;
+  }
+}
+
+#fxaSignoutDialog {
+  color: var(--Dark_TextColor) !important;
+  background-color: var(--Dark_BackgroundColor) !important;
+  font-family: "Fira Sans" !important;
+  font-size: 1.2rem !important;
+}
+
+.delete-local-data-checkbox {
+  font-family: "Fira Sans" !important;
+  font-size: 1.2rem !important;
+}
+
+checkbox:-moz-focusring > .checkbox-label-box,
+.checkbox-label-box:focus-visible {
+  outline: 0 !important;
+}

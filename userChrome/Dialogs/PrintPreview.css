@@ -1,0 +1,33 @@
+/*+++++ Print Preview +++++*/
+/*Styled through userchrome.ag.css in resources folder*/
+
+.dialogOverlay {
+  background-color: transparent !important;
+}
+
+/*.printPreviewBrowser {
+  opacity: 0.6 !important;
+}
+
+.previewStack {
+  background: var(--Dark_BackgroundColor) !important;
+}*/
+
+.toolbarButton,
+.toolbarCenter {
+  border-inline-end: none !important;
+  border-block: none !important;
+  font-family: "Fira Sans" !important;
+  font-size: 1.2rem !important;
+}
+
+.startItem {
+  border-inline-start: none !important;
+  border-start-start-radius: 4px !important;
+  border-end-start-radius: 4px !important;
+}
+
+.endItem {
+  border-start-end-radius: 4px !important;
+  border-end-end-radius: 4px !important;
+}

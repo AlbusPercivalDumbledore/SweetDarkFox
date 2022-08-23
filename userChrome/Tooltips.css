@@ -1,0 +1,99 @@
+/*https://github.com/aminomancer/uc.css.js/blob/master/uc-misc.css*/
+
+tooltip {
+  -moz-default-appearance: none !important;
+  display: -moz-popup;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background-color: transparent !important;
+  color: #fff !important;
+  border: none !important;
+  max-width: max(30vw, 40em);
+  padding: 5px !important;
+  margin-inline-start: -5px !important;
+  margin-block-start: 16px !important;
+  pointer-events: none !important;
+}
+
+tooltip,
+#statuspanel {
+  --uc-tooltip-inner-padding: 4px 7px 6px 7px;
+}
+
+tooltip > description,
+.places-tooltip-box,
+tooltip .uc-tooltip-box {
+  background-color: var(--Dark_BackgroundColor) !important;
+  color: #fff !important;
+  border: 1px solid var(--Dark_ActiveColor) !important;
+  border-radius: 5px !important;
+  box-shadow: var(--tooltip-box-shadow) !important;
+  padding: var(--uc-tooltip-inner-padding, 4px 7px 6px 7px) !important;
+  margin: 0 !important;
+  --tooltip-box-shadow: 0 0 3px var(--Dark_ActiveColor) !important;
+}
+
+/* set browser.proton.places-tooltip.enabled to true, it's less in the way when it's tethered to the tab */
+.places-tooltip {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+#tab-nav-popup {
+  --tooltip-border-radius: 3px !important;
+}
+
+.places-tooltip-box,
+tooltip .uc-tooltip-box {
+  --uc-tooltip-inner-padding: 5px 7px 6px 7px !important;
+}
+
+.places-tooltip description:not([value], [id]):empty,
+.places-tooltip description[value=""]:not([id]):empty {
+  display: none !important;
+}
+
+.places-tooltip-box > hbox {
+  display: flex !important;
+  align-items: center !important;
+  color: #fff !important;
+}
+
+.places-tooltip-title {
+  font-weight: 600;
+  /* Clip after 2 lines, this should ideally use a different method like -webkit-line-clamp or
+  overflow: hidden; to get ellipsis support but XUL tooltip sizing makes that difficult. */
+  max-height: 2.5em;
+  overflow-y: clip;
+}
+
+.places-tooltip-uri {
+  color: #fff !important;
+}
+
+.places-tooltip-title[hidden="true"] ~ .places-tooltip-uri {
+  color: inherit !important;
+}
+
+.places-tooltip-box[desc-hidden="true"] > hbox {
+  display: none !important;
+}
+
+.places-tooltip-box[desc-hidden="true"] .places-tooltip-title {
+  margin-bottom: 1px !important;
+}
+
+#places-tooltip-insecure-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0.25em !important;
+  min-width: 1em !important;
+}
+
+#places-tooltip-insecure-icon[hidden] {
+  display: none;
+}

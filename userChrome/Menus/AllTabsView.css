@@ -1,0 +1,93 @@
+/*+++++ ALL TABS VIEW +++++*/
+/*Also modified by allTabsMenuExpansionPack.uc.js*/
+
+/*Modify Minimum and Maximum Width*/
+#customizationui-widget-multiview panelview:not([extension]) {
+  min-width: 22.35em !important;
+  max-width: 90em !important;
+}
+
+#allTabsMenu-allTabsViewTabs {
+  --moz-appearance: none !important;
+  font-family: "Fira Sans" !important;
+  min-width: 40em !important;
+  max-width: 40em !important;
+}
+
+/*Increase Top margin of Search Tabs Option*/
+#allTabsMenu-searchTabs {
+  margin-top: 5px !important;
+}
+
+/*Number the tabs*/
+.all-tabs-button::before {
+  content: counter(nth-tab) " " !important;
+  counter-increment: nth-tab !important;
+  display: block !important;
+  margin-right: 5px !important;
+  width: 20px !important;
+  margin-left: 5px !important;
+}
+
+.all-tabs-item:first-child {
+  counter-reset: nth-tab 0 !important;
+}
+
+/*Tab Height*/
+.all-tabs-item {
+  /*font-size: 1rem !important;*/
+  height: 26px !important;
+}
+
+.all-tabs-item .all-tabs-secondary-button > .toolbarbutton-icon {
+  background: var(--Dark_BackgroundColor) !important;
+}
+
+/*++++++++++ Vertical Tabs Pane ++++++++++*/
+
+#vertical-tabs-pane {
+  border-color: var(--Dark_BackgroundColor) !important;
+}
+
+/*Fix Change in Height on Hover*/
+#vertical-tabs-list .all-tabs-item {
+  height: 24px !important;
+  max-height: 24px !important;
+  font-family: Fira Sans !important;
+}
+
+/*Change Font of 'New Tab' Text Label*/
+#vertical-tabs-new-tab-button > .toolbarbutton-text {
+  font-family: Fira Sans !important;
+  margin-top: 3px !important;
+}
+
+/*Change container indicator width*/
+#vertical-tabs-list
+  .all-tabs-item:is([selected], [multiselected], [usercontextid]:is(:hover, [_moz-menuactive]))
+  .all-tabs-button {
+  background-image: linear-gradient(
+    to right,
+    var(--main-stripe-color) 0,
+    var(--main-stripe-color) 3px,
+    transparent 3px
+  ) !important;
+}
+
+/*Make background of close button dark*/
+#vertical-tabs-list
+  .all-tabs-item
+  .all-tabs-secondary-button
+  > .toolbarbutton-icon {
+  background: var(--Dark_BackgroundColor) !important;
+}
+
+/*Move Favicon to the left*/
+#vertical-tabs-pane .subviewbutton-iconic > .toolbarbutton-icon {
+  -moz-context-properties: fill, fill-opacity;
+  -moz-box-ordinal-group: 0 !important;
+}
+
+:root #vertical-tabs-pane .all-tabs-item .all-tabs-button::before {
+  padding-left: 8px !important;
+}

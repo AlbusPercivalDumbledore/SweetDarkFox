@@ -1,0 +1,132 @@
+/*+++++ HAMBURGER MENU +++++*/
+/*Hidden with #PanelUI-button {display: none !important;} in NavigatorToolbox -> ToolbarButtons.css. Use MenuBar instead. The only worthwhile option available there is account status, for which Manage Account Toolbar Button can be used.*/
+
+/*Reduce Width of menu*/
+#appMenu-protonMainView {
+  width: 18em !important;
+}
+
+/*Specify font-face and size*/
+/*Font size for Panel Headings is specified universally in global-rules.css*/
+#appMenu-protonMainView .panel-subview-body {
+  font-size: 1.05rem !important;
+  font-family: "Fira Sans" !important;
+}
+
+/*Reduce padding for Firefox Account Login Button*/
+#appMenu-fxa-status2[fxastatus] > #appMenu-fxa-label2 {
+  padding-block: 5px !important;
+  -moz-box-flex: 1;
+  margin-top: 5px !important;
+}
+
+/*Make font-weight normal for Firefox Account Login Button. Not needed though, as already specified by universal selector in global-colors.css*/
+#appMenu-fxa-status2[fxastatus]
+  > #appMenu-fxa-label2
+  > vbox
+  > #appMenu-header-description,
+#appMenu-fxa-text {
+  font-weight: normal !important;
+}
+
+/*Gradient Toolbar Separator below account login buttonj*/
+.PanelUI-subView toolbarseparator.proton-zap {
+  border-image: 2
+    linear-gradient(270deg, #004e92 0%, #aa076b 52.08%, #dc2430 100%) !important;
+  border-top: 2px solid transparent !important;
+}
+
+/*Reduce size of twisty icons*/
+.panel-header > .subviewbutton-back {
+  transform: scale(0.7) !important;
+}
+
+/*Specify font-size for keyboard shortcuts on right*/
+.subviewbutton[shortcut]::after {
+  font-size: 1rem !important;
+}
+
+/*Remove frivolous options*/
+#appMenu-new-tab-button2,
+#appMenu-new-window-button2,
+#appMenu-new-private-window-button2,
+#appMenu-bookmarks-button,
+#appMenu-history-button,
+#appMenu-passwords-button,
+#appMenu-extensions-themes-button,
+#appMenu-print-button2,
+#appMenu-save-file-button2,
+#appMenu-find-button2,
+/*#appMenu-proton-update-banner,*/
+#appMenu-new-private-window-button2 + toolbarseparator,
+#appMenu-downloads-button,
+#appMenu-extensions-themes-button + toolbarseparator,
+#appMenu_feedbackPage,
+#appMenu_menu_openHelp,
+#appMenu_help_reportSiteIssue,
+#appMenu_menu_HelpPopup_reportPhishingtoolmenu {
+  display: none !important;
+}
+
+/*Remove scroll from More Tools submenu*/
+#appmenu-moreTools {
+  max-height: 400px !important;
+}
+
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/iconized_main_menu.css made available under Mozilla Public License v. 2.0
+See the above repository for updates as well as full license text. */
+
+/* Adds icons to main menu items which were removed in Proton */
+#appMenu-fxa-status2[fxastatus] > toolbarbutton::before {
+  margin-inline: 0 8px !important;
+}
+
+#appMenu-protonMainView > .panel-subview-body > toolbarbutton > image {
+  fill: #ffffff !important;
+  -moz-context-properties: fill !important;
+  margin-inline: 0 8px !important;
+}
+
+#appMenu-more-button2 {
+  list-style-image: url(chrome://userchrome/content/skin/developer.svg);
+}
+
+#appMenu-help-button2 {
+  list-style-image: url(chrome://userchrome/content/skin/tip.svg);
+}
+
+#appMenu-settings-button {
+  list-style-image: url(chrome://userchrome/content/settings.svg);
+}
+
+#appmenu-moreTools-button {
+  list-style-image: url(chrome://browser/skin/customize.svg);
+}
+
+#appMenu-quit-button2 {
+  list-style-image: url(chrome://userchrome/content/skin/quit.svg);
+}
+
+#appMenu-restart-button2 {
+  list-style-image: url(chrome://userchrome/content/skin/reload.svg);
+}
+
+#appMenu-zoom-controls2::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  -moz-context-properties: fill, fill-opacity;
+  fill: currentColor;
+  background-image: url(chrome://userchrome/content/fxa/add-device.svg);
+  margin-inline-end: 8px !important;
+}
+
+#appMenu-zoom-controls2 toolbarbutton {
+  margin-inline: 4px !important;
+  border: 1px solid transparent !important;
+  min-height: 20px !important;
+  min-width: 20px !important;
+  width: unset !important;
+  padding: 4px !important;
+}

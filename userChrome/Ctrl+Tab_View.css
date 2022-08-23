@@ -1,0 +1,194 @@
+/*+++++ Tweaks for Ctrl+Tab +++++*/
+
+/* This Source Code Form is subject to the terms of the Creative Commons
+* Attribution-NonCommercial-ShareAlike International License, v. 4.0.
+* If a copy of the CC BY-NC-SA 4.0 was not distributed with this
+* file, You can obtain one at http://creativecommons.org/licenses/by-nc-sa/4.0/
+* or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA. */
+
+/* this stylesheet only controls the appearance of the ctrl+tab popup */
+
+#ctrlTab-previews {
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  border-radius: 3px !important;
+}
+
+#ctrlTab-panel {
+  appearance: none !important;
+  border-style: none !important;
+  font-weight: normal !important;
+  text-shadow: 0 0 2px hsl(0, 0%, 8%), 0 0 2px hsl(0, 0%, 8%) !important;
+  box-shadow: none !important;
+  background: none !important;
+  --panel-background: var(--ctrlTab-overlay-color) !important;
+  border-radius: 3px !important;
+  overflow: hidden !important;
+  /*padding-left: 150px !important;
+  padding-right: 150px !important;*/
+  transform: scale(0.9) !important;
+}
+
+@supports -moz-bool-pref("userChrome.css.ctrl-tab-backdrop-overlay") {
+  :root[ctrlTab-panel-open]
+    :is(#browser .browserContainer, #navigator-toolbox toolbar, #mainPopupSet
+      menupopup) {
+    filter: contrast(0.95) brightness(0.6);
+  }
+}
+
+.ctrlTab-preview {
+  background: none !important;
+  border: none !important;
+}
+
+.ctrlTab-preview:not(#ctrlTab-showAll) > * > .ctrlTab-preview-inner {
+  margin: -5px -5px 0 !important;
+}
+
+.ctrlTab-preview-inner img:-moz-broken {
+  visibility: hidden !important;
+}
+
+.ctrlTab-canvas {
+  box-shadow: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  fill: white !important;
+  fill-opacity: 0.7 !important;
+  -moz-context-properties: fill, fill-opacity !important;
+  background: url(chrome://userchrome/content/identity-icons-brand.svg) center
+    no-repeat !important;
+  background-size: 25% !important;
+}
+
+#ctrlTab-showAll-container {
+  margin-top: 8px !important;
+}
+
+#ctrlTab-showAll {
+  background-color: var(--ctrlTab-panel-bgcolor) !important;
+  border: 1px solid var(--blurred-dialog-border-color) !important;
+  border-radius: 3px !important;
+}
+
+#ctrlTab-showAll .button-box {
+  padding: 2px 4px !important;
+}
+
+#ctrlTab-showAll:focus,
+#ctrlTab-showAll:focus-within {
+  background-color: var(--ctrlTab-panel-focused-bgcolor) !important;
+  border: 1px solid var(--attention-color) !important;
+  margin-top: 7px !important;
+}
+
+.ctrlTab-preview-inner {
+  color: var(--Dark_TextColor) !important;
+  margin: 0px !important;
+  padding: 10px !important;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+  background-color: var(--ctrlTab-panel-bgcolor) !important;
+  border: 1px solid var(--Dark_ActiveColor) !important;
+}
+
+.ctrlTab-preview:focus > .ctrlTab-preview-inner {
+  background-color: var(--ctrlTab-panel-focused-bgcolor) !important;
+  border: 1px solid var(--attention-color) !important;
+  box-shadow: none !important;
+}
+
+.ctrlTab-canvas > * {
+  border-radius: 3px !important;
+}
+
+.ctrlTab-favicon-container {
+  -moz-box-align: start !important;
+  -moz-box-pack: start !important;
+  box-shadow: none !important;
+  margin-inline-start: 7px !important;
+  margin-top: -47px !important;
+  padding-bottom: 13px !important;
+  height: 45px !important;
+  position: absolute !important;
+}
+
+.ctrlTab-favicon {
+  margin: 0 !important;
+}
+
+.ctrlTab-favicon[src] {
+  background: transparent !important;
+  width: 32px !important;
+  height: 32px !important;
+  padding: 3px !important;
+  box-shadow: none !important;
+  border-radius: 3px !important;
+  -moz-context-properties: fill, fill-opacity, stroke, stroke-opacity !important;
+  fill: currentColor !important;
+}
+
+.ctrlTab-label {
+  color: inherit !important;
+  margin-bottom: -1.5px !important;
+}
+
+/*Specify Background Color around Tab Previews*/
+/*#ctrlTab-panel {
+  -moz-appearance: none !important;
+  color: var(--Dark_TextColor) fff !important;
+  border-style: none !important;
+  padding: 20px 10px 10px !important;
+  font-family: Fira Sans !important;
+  text-align: center !important;
+  text-shadow: none !important;
+  --panel-background: rgba(0, 0, 0, 0.5) !important;
+}
+
+#ctrlTab-showAll,
+.ctrlTab-preview:focus > .ctrlTab-preview-inner,
+#ctrlTab-showAll:focus {
+  background-color: var(--Dark_BackgroundColor) !important;
+}
+
+#ctrlTab-showAll:focus {
+  margin-top: 6px !important;
+  border: 2px solid #8F02F1 !important;
+}
+
+.ctrlTab-preview {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.ctrlTab-preview-inner {
+  padding: 5px !important;
+  border: 2px solid transparent !important;
+  border-radius: 5px !important;
+  background: var(--Dark_BackgroundColor) !important;
+  margin-bottom: 5px !important;
+  margin-right: 5px !important;
+}*/
+
+/*Gradient Border around Active Tab*/
+/*.ctrlTab-preview:focus > .ctrlTab-preview-inner {
+  border: 2px solid #8F02F1 */ /*#dc2430*/ /*!important;*/
+/*border-image: 2 2 2 2
+    linear-gradient(90deg, #004e92 0%, #aa076b 52.08%, #dc2430 100%) !important;*/
+/*}*/
+
+/*Reduce size of favicons, remove background*/
+/*.ctrlTab-favicon[src] {
+  background-color: transparent !important;
+  transform: scale(0.6);8/
+  /*width: 20px !important;
+  height: 20px !important;
+  padding: 0px !important;*/
+/*}*/
+
+/*Remove those hideos broken image icons, that appear in place of previews, when webpage hasn't finished loading*/
+/*.ctrlTab-canvas > img:not(src) {
+  display: none !important;
+}*/

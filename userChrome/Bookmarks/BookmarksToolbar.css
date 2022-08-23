@@ -1,0 +1,87 @@
+/*++++++++++ Bookmarks Toolbar ++++++++++*/
+
+/*Remove Import Bookmarks Button*/
+
+#PersonalToolbar #import-button {
+  font-family: "Fira Sans" !important;
+  font-size: 0.95rem !important;
+  display: none !important;
+}
+
+/*Remove Other Bookmarks Button*/
+#PlacesToolbar #OtherBookmarks {
+  /*display: none !important;*/
+  padding-left: 0px !important;
+  border-top: 1px solid #181818 !important;
+  margin-top: 10px !important;
+  height: 30px !important;
+}
+
+#PlacesToolbar #OtherBookmarks > .toolbarbutton-icon {
+  display: none !important;
+}
+
+#PlacesToolbar #OtherBookmarks > .toolbarbutton-text {
+  color: var(--Dark_TextColor) !important;
+  font-variant: petite-caps;
+  font-size: 15px !important;
+  /*text-align: right !important;
+  margin-right: 8px !important;*/
+}
+
+/*Change Font*/
+toolbarbutton.bookmark-item:not(.subviewbutton) {
+  font-family: "Fira Sans" !important;
+  font-size: 13px !important;
+}
+
+/*Reduce Size of icons*/
+#PlacesToolbarItems > .bookmark-item > .toolbarbutton-icon,
+#OtherBookmarks.bookmark-item[container] > .toolbarbutton-icon {
+  width: 12px !important;
+  height: 12px !important;
+  margin-top: -2px !important;
+}
+
+#PlacesToolbarItems > .bookmark-item > .toolbarbutton-icon {
+  margin-left: 5px !important;
+}
+
+/*Move Bookmark Item Text to Left, specify right margin, and make it right-aligned*/
+#PersonalToolbar #import-button > .toolbarbutton-text,
+#PersonalToolbar .bookmark-item > .toolbarbutton-text {
+  display: -moz-box !important;
+  text-align: left !important;
+  /*-moz-box-ordinal-group: 0 !important;*/
+  margin-left: 5px !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/*Increase Maximum width of items on Bookmarks Bar*/
+toolbarbutton.bookmark-item:not(.subviewbutton) {
+  max-width: 160px !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+/* Add divider to vertical bookmarksbar*/
+#PersonalToolbar {
+  border-inline: 1px solid var(--Dark_ActiveColor);
+  border-inline-width: 1px 0px;
+}
+
+/*Add a 'Bookmarks Header' to Bookmarks Sidebar*/
+#PlacesToolbarItems::before {
+  display: block !important;
+  margin: 10px !important;
+  margin-bottom: 5px !important;
+  /*margin-right: 8px !important;*/
+  margin-left: 5px !important;
+  content: "Bookmarks Toolbar" !important;
+  color: var(--Dark_TextColor) !important;
+  background: transparent !important;
+  font-size: 15px !important;
+  font-family: Fira Sans !important;
+  font-variant-caps: petite-caps !important;
+  text-align: left !important;
+}

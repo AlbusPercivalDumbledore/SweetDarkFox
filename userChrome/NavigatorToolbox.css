@@ -1,0 +1,66 @@
+@import url(NavigatorToolbox/Menubar.css);
+@import url(NavigatorToolbox/NavTabInOneLine.css);
+@import url(NavigatorToolbox/TabBar.css);
+@import url(NavigatorToolbox/ToolbarButtons.css);
+@import url(NavigatorToolbox/UrlBar.css);
+
+/*Hide Navigator Toolbox top border*/
+:root[sizemode="normal"] {
+  border-top: none !important;
+}
+
+:root[sizemode="normal"] #titlebar {
+  -moz-appearance: none !important;
+}
+
+/* Remove frivolous Window drag space  */
+
+.titlebar-spacer,
+.titlebar-spacer[type="pre-tabs"] {
+  display: none;
+}
+
+/*Specify Background Color of Titlebar*/
+#titlebar {
+  background: var(--Dark_BackgroundColor) !important;
+}
+
+/* Gradient Line below Navigator Toolbox*/
+/*
+#main-window:not([sizemode="maximized"]) #navigator-toolbox:after {
+  top: 2px !important;
+}
+
+#navigator-toolbox:after {
+  content: "";
+  top: 10px !important;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    var(--Dark_BackgroundColor),
+    #004e92,
+    #aa076b,
+    #dc2430,
+    #dc2430,
+    #aa076b,
+    #004e92,
+    var(--Dark_BackgroundColor)
+  );
+  clip: rect(24px, 2600px, 26px, 0px);
+  position: absolute !important;
+}*/
+
+/*Autohide Navigator Toolbox*/
+/*https://github.com/furycd001/dots/blob/master/Firefox/webview.css*/
+/*#navigator-toolbox {
+  margin-top: -26px;
+  transition: margin-top 0.2s ease 400ms;
+}
+
+#navigator-toolbox:hover,
+#navigator-toolbox:focus-within {
+  margin-top: 0px;
+  transition: margin-top 0.2s;
+}*/
