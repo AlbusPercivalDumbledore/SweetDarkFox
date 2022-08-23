@@ -1,0 +1,70 @@
+@import url(AboutPages/AboutAddons.css);
+@import url(AboutPages/AboutCache.css);
+@import url(AboutPages/AboutConfig.css);
+@import url(AboutPages/AboutDebugging.css);
+@import url(AboutPages/AboutDownloads.css);
+@import url(AboutPages/AboutMemory.css);
+@import url(AboutPages/AboutNewTab.css);
+@import url(AboutPages/AboutPerformance.css);
+@import url(AboutPages/AboutPrivateBrowsing.css);
+@import url(AboutPages/AboutProcesses.css);
+@import url(AboutPages/AboutProfiles.css);
+@import url(AboutPages/AboutSupport.css);
+
+/*+++++ ABOUT: PAGES ++++*/
+
+@-moz-document url-prefix("about:") {
+  window,
+  page,
+  html,
+  .main-content,
+  scrollbar {
+    scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
+    scrollbar-width: thin !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    font-family: Fira Sans !important;
+  }
+
+  h1 {
+    font-variant-caps: petite-caps !important;
+  }
+
+  /*Background to indicate a selected category on left sidebar*/
+  #categories > .category[selected] {
+    background-color: var(--Dark_ActiveColor) !important;
+    color: var(--Dark_TextColor) !important;
+    border-radius: 0px !important;
+  }
+
+  /*Sidebar Item Hover Background*/
+  .sidebar-item--selectable:hover {
+    background-color: transparent !important;
+    text-decoration: 1px underline white !important;
+    text-underline-offset: 10px !important;
+  }
+
+  #main {
+    margin-inline-start: 7% !important;
+  }
+  .main-search {
+    padding-inline-end: 28px;
+    max-width: 100% !important;
+    padding: 20px 20px !important;
+  }
+  .main-search .search-label {
+    display: none !important;
+  }
+  .main-heading {
+    margin-top: -52px !important;
+    margin-bottom: 4px !important;
+    min-width: 50% !important;
+  }
+  .main-heading .spacer {
+    max-width: 20px !important;
+  }
+}
+
+.contentPane.doScroll,
+dialog.doScroll::part(content-box) {
+  font-family: fira sans !important;
+}

@@ -1,0 +1,16 @@
+/*+++++ BYPASS PAYWALS CLEAN EXTENSION +++++*/
+
+@-moz-document url-prefix(moz-extension://52ef80c9-c7c5-464d-a782-747efcfa6fd8/)
+{
+  * {
+    color: var(--Dark_TextColor) !important;
+    font-size: 95% !important;
+  }
+
+  button {
+    background: var(--Dark_BackgroundColor) !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
+    padding: 5px !important;
+    -moz-appearance: none !important;
+  }
+}

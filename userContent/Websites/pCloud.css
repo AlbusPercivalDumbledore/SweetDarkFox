@@ -1,0 +1,53 @@
+@-moz-document domain("pcloud.com") {
+  body {
+    filter: invert(1) !important;
+    background: #000 !important;
+  }
+
+  img.listicon {
+    filter: invert(1) !important;
+  }
+
+  .darkbox {
+    filter: invert(1) !important;
+  }
+
+  .bonus-steps-holder {
+    display: none !important;
+  }
+
+  .header-container {
+    filter: invert(1) !important;
+  }
+
+  .header-container.europe,
+  .header-container.europe .header {
+    background-color: #000 !important;
+  }
+
+  .content {
+    padding-top: 60px !important;
+  }
+
+  .left-banner {
+    display: none !important;
+  }
+
+  .header,
+  .content {
+    width: 1266px !important;
+  }
+
+  .header .header-links {
+    float: right;
+    line-height: 60px;
+    margin-right: 0;
+  }
+  .header-links {
+    display: none !important;
+  }
+
+  .left-menu-item-invitefriends {
+    display: none !important;
+  }
+}

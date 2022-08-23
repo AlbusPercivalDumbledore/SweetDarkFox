@@ -1,0 +1,105 @@
+@-moz-document url-prefix(moz-extension://bdb634a0-2176-459d-8b84-0754b2597dfe/popup.html)
+{
+  * {
+    font-family: Fira Sans !important;
+    min-height: 0px !important;
+    min-width: 0px !important;
+  }
+
+  html,
+  body,
+  #app-frame,
+  .css-5fy57i,
+  .css-14qbdc2,
+  .css-o48pxl-Container,
+  .css-1b0sxz4-DomainRow,
+  .css-9xdjnh,
+  .css-10klw3m,
+  .css-281kbe,
+  .css-1dvsqd3,
+  .css-8fce97-Feed,
+  .css-9arqn6-NotificationCard-Feed {
+    background: var(--Dark_BackgroundColor) !important;
+  }
+
+  .css-y2pm3j,
+  .css-14uc296-SimpleButton-baseStyle-SimpleButtonStyle-MenuItemContainer,
+  .css-12hpa27-SimpleButton-baseStyle-SimpleButtonStyle-MenuItemContainer {
+    padding: 5px !important;
+    border: 0 !important;
+  }
+
+  .css-1m43k0f,
+  .css-1dybgnf,
+  .css-e01pew-LinkIconButtonThemed,
+  .css-12ca6iu,
+  .css-13mffet-InlineButton-baseStyle-InlineButtonStyle {
+    display: none !important;
+  }
+
+  .css-10lvqvs {
+    border: 0 !important;
+  }
+
+  .css-9wughl {
+    box-shadow: none !important;
+  }
+
+  .css-mkds5g {
+    font-variant-caps: petite-caps !important;
+    font-size: 16px !important;
+  }
+
+  .css-vux11d-IconButton-baseStyle-IconButtonStyle-BackArrowContainer,
+  .css-1bt3t3j-IconButton-baseStyle-IconButtonStyle {
+    width: 14px !important;
+    height: 14px !important;
+    background: var(--Dark_BackgroundColor) !important;
+    margin-top: 3px !important;
+  }
+
+  svg {
+    transform: scale(0.8) !important;
+  }
+
+  .css-e1adp8-IconButton-baseStyle-IconButtonStyle {
+    transform: scale(0.85) !important;
+  }
+
+  .css-1j890li {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+
+  .css-10jhj15,
+  .css-8vkmhl {
+    border-bottom: 0 !important;
+  }
+
+  .react-toggle {
+    transform: scale(0.6) !important;
+    filter: invert(0.1) !important;
+  }
+
+  .css-sxg11y {
+    margin-left: -20px !important;
+  }
+
+  .css-1yuuwzf {
+    margin: 5px !important;
+  }
+
+  .css-4br4eh-IconButton-baseStyle-IconButtonStyle {
+    background: var(--Dark_BackgroundColor) !important;
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .css-14uw1f1.css-c8hdpr {
+    transform: scale(0.6) !important;
+  }
+
+  .css-1o9hyvd {
+    top: 5px !important;
+  }
+}

@@ -1,0 +1,9 @@
+/*+++++ BLOCK SITE EXTENSION +++++*/
+
+@-moz-document url-prefix(moz-extension://48ef8dbd-cae8-4e0d-b607-145cd5f49386/)
+{
+  * {
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+  }
+}

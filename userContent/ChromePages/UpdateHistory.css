@@ -1,0 +1,19 @@
+/* Update History */
+
+@-moz-document url("chrome://mozapps/content/update/history.xhtml")
+{
+  #history {
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.15rem !important;
+  }
+
+  #historyItems {
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.15rem !important;
+    -moz-appearance: none !important;
+  }
+}

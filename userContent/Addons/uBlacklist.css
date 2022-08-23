@@ -1,0 +1,10 @@
+/*+++++ U-Blacklist Extension +++++*/
+
+@-moz-document url-prefix(moz-extension://a3852a37-ef5e-4562-839b-778f0dbaf7fd/)
+{
+  .go3386549925 {
+    background-color: var(--Dark_BackgroundColor) !important;
+    font-family: "Fira Sans" !important;
+    font-size: 0.85rem !important;
+  }
+}

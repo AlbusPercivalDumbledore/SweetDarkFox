@@ -1,0 +1,51 @@
+/*ABOUT:MEMORY*/
+
+@-moz-document url-prefix("about:memory") {
+  div.opsRow,
+  div.section {
+    border: 1px solid var(--Dark_BorderColor) !important;
+    border-radius: 2px !important;
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  button {
+    -moz-appearance: none !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
+    margin-top: 10px !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.1rem !important;
+    padding: 3px !important;
+    margin-right: 5px !important;
+  }
+
+  div.opsRowLabel,
+  div.sidebarLabel {
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.2rem !important;
+  }
+
+  div.sidebarItem {
+    border: 1px solid var(--Dark_BorderColor) !important;
+    border-radius: 2px !important;
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.1rem !important;
+  }
+
+  input.filterInput {
+    -moz-appearance: none !important;
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
+    padding: 3px !important;
+    margin-bottom: 5px !important;
+  }
+}

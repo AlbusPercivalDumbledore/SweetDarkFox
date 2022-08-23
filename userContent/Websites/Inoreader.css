@@ -1,0 +1,188 @@
+@-moz-document domain("inoreader.com") {
+  html,
+  body {
+    color: #bfbfbf;
+    background-color: #000 !important;
+  }
+
+  .landing_lite_body {
+    filter: invert(1) !important;
+  }
+
+  .landing_lite_body .header_buttons {
+    filter: invert(1) !important;
+  }
+
+  #reader_pane {
+    background-color: #000 !important;
+  }
+
+  div[class="article_header"],
+  .article_full_contents {
+    background: #000 !important;
+    font-family: Fira Sans !important;
+  }
+
+  .article_content,
+  .article_annotation_text {
+    font-family: Fira Sans !important;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .article_subscribed,
+  .article_expanded
+    .article_footer_placeholder_middle.footerized.article_footer_placeholder_middle_sticky,
+  #article_dialog .article_footer_placeholder_top,
+  .arrow_div,
+  .article_tile_title,
+  .header_date,
+  .header_buttons {
+    background: #000 !important;
+  }
+
+  .articles_feed_group_heading {
+    background: #000 !important;
+    font-family: Fira Sans !important;
+    font-variant-caps: all-petite-caps !important;
+    font-size: 18px !important;
+    margin-bottom: 10px !important;
+    border-bottom: 0 !important;
+  }
+
+  .article_create_annotation_link {
+    display: none !important;
+  }
+
+  #tree_pane,
+  #preferences_categories,
+  .tree_ad {
+    background-color: #000 !important;
+    color: #b5b5b5;
+    font-family: Fira Sans !important;
+  }
+
+  #tree {
+    background: #000 !important;
+  }
+
+  fieldset {
+    background-color: #000 !important;
+  }
+
+  #subscriptions_buttons {
+    height: 30px !important;
+    position: initial !important;
+    z-index: 99;
+    line-height: 12px !important;
+    background: #000 !important;
+  }
+
+  .inno_toolbar_button {
+    background: #000 !important;
+    border: #181818 !important;
+  }
+
+  #sb_tree_part,
+  #sb_tp_search_overlay,
+  #feed_searcher {
+    background: #000 !important;
+  }
+
+  #sb_rp_mark_read {
+    display: none !important;
+  }
+
+  #unread_cnt_top {
+    display: none !important;
+  }
+
+  #all_cnt_top {
+    background: #000 !important;
+    border: 1px solid #181818 !important;
+  }
+
+  #subscriptions_buttons,
+  #sb_rp_tools {
+    background-color: #000 !important;
+  }
+
+  #sb_rp_prev_article,
+  #sb_rp_next_article,
+  #sb_rp_notifications_button {
+    display: none !important;
+  }
+
+  #sb_rp_settings img {
+    filter: invert(1) !important;
+    transform: scale(0.3) !important;
+  }
+
+  .articles_feed_group_heading_title {
+    color: gold !important;
+    padding-left: 10px !important;
+    height: 25px !important;
+  }
+
+  .article,
+  .article_unreaded,
+  .article_archived {
+    background: #000 !important;
+  }
+
+  .article_footer {
+    background-color: #000 !important;
+    color: #777777;
+    padding: 0 !important;
+    padding-top: 5px !important;
+  }
+
+  #parent_all_articles,
+  #parent_web_pages,
+  #parent_web_pages {
+    display: none !important;
+  }
+
+  .inno_toolbar_rp_heading {
+    font-size: 14px !important;
+    font-family: Fira Sans !important;
+  }
+
+  .inno_toolbar_switcher_button_main_label {
+    font-family: Fira Sans !important;
+    font-size: 12px !important;
+  }
+
+  .article_footer_main_buttons {
+    display: flex;
+    width: 110px !important;
+    justify-content: space-between;
+  }
+
+  .icon16 {
+    width: 14px !important;
+    height: 14px !important;
+    font-size: 14px !important;
+  }
+
+  .article_footer_sticky_border .article_footer {
+    border-bottom: 0 !important;
+  }
+
+  a[href="https://indianexpress.com/section/opinion/?utm_source=newbanner"]
+  {
+    display: none !important;
+  }
+
+  .article_unread_dot {
+    display: none !important;
+  }
+
+  div[class="article_footer_buttons icon16 icon-button-mark-read-empty"] {
+    display: none !important;
+  }
+
+  div[class="article_footer_buttons icon16 icon-button-email"] {
+    display: none !important;
+  }
+}

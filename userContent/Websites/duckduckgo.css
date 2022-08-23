@@ -1,0 +1,370 @@
+@-moz-document domain("duckduckgo.com") {
+  html,
+  body,
+  .body--home,
+  .site-wrapper,
+  .region__body,
+  .badge-link,
+  .module--carousel__image-wrapper,
+  .result__image,
+  .vertical--map__sidebar,
+  .vertical--map__sidebar__header,
+  .page-chrome_newtab,
+  .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded,
+  .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded
+    .metabar:not(.is-stuck) {
+    background-color: var(--Dark_BackgroundColor) !important;
+  }
+
+  .search--home,
+  .search--header {
+    background-color: var(--Dark_BackgroundColor) !important;
+    border-color: var(--Dark_BorderColor) !important;
+  }
+
+  /*  .result__url,
+  .result__url:visited,
+  .result__url:active,
+  .result__url:hover,
+  .result__url:focus,
+  .result__url:visited:focus,
+  .result--ad .result__url,
+  .result--ad .result__url:hover,
+  .result--ad .result__url:active,
+  .result--ad .result__url:visited {
+    color: #ab9df2 !important;
+  }*/
+
+  .result__url__domain {
+    color: #fc9867 !important;
+  }
+
+  .header-wrap,
+  .vertical--map--sidebar-left .vertical--map__sidebar__header,
+  .vertical--map--sidebar-left .has-requery .vertical--map__sidebar__header,
+  .vertical--map__sidebar__header--mobile,
+  .map-requery-mobile,
+  .footer,
+  .footer--mobile {
+    background-color: var(--Dark_BackgroundColor) !important;
+    box-shadow: none !important;
+  }
+
+  .search-filters-wrap::before,
+  .search-filters-wrap::after {
+    background-image: none !important;
+  }
+
+  .result__icon {
+    display: none !important;
+  }
+
+  .result__snippet,
+  .result__snippet b,
+  .sitelink--small__comma {
+    color: #b4b4b4 !important;
+  }
+
+  .module:not(.module--carousel):not(.module--placeholder):not(.module--images),
+  .modal--popout .modal__box,
+  .modal__box,
+  .sidebar-modules .module,
+  .results--main .result:not(.result--ad).highlight,
+  .module .module--carousel__item,
+  .user-loc-cta,
+  .address-detail,
+  .modal--dropdown.modal--popout .modal__box,
+  .tile--info,
+  .place-detail,
+  .badge-link,
+  .is-atb-fullbleed .content-info__item,
+  .atb-banner__bottom,
+  .multi-step-mobile-onboarding__step__content,
+  .is-mobile .results_links_deep,
+  .is-mobile .results_links,
+  .is-mobile .result--news,
+  .is-mobile .related-searches,
+  .most-visited__info-tt,
+  .user-loc-tooltip {
+    border: 1px solid var(--Dark_BorderColor);
+    background: var(--Dark_BackgroundColor) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    color: #cccccc;
+  }
+
+  .zcm__item,
+  .zcm__item--b,
+  .zcm__sep--h {
+    font-variant-caps: petite-caps !important;
+    font-size: 14px !important;
+  }
+
+  .frm__select:hover select,
+  .btn.is-active,
+  .btn:hover,
+  .frm__select:hover,
+  .btn.most-visited__toggle:hover,
+  .btn.most-visited__toggle:active,
+  .btn.most-visited__toggle:focus,
+  .no-touch .tile-nav--sm.can-scroll:hover,
+  .no-touch .tile-nav--sm.can-scroll:active,
+  .no-touch .tile-nav--sm.can-scroll:hover:active,
+  .modal .btn:hover:not(.is-disabled),
+  .modal .btn:hover:not(.is-disabled) {
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: #eeeeee;
+    border-color: var(--Dark_BackgroundColor) !important;
+  }
+
+  .result--more__btn {
+    background-color: var(--Dark_BackgroundColor) !important;
+  }
+
+  a,
+  a:hover,
+  .no-visited,
+  .result__a,
+  .result__a:hover,
+  .result__a:active,
+  .result__a:focus,
+  .badge--ad,
+  .badge--ad:hover,
+  .badge--ad:focus,
+  .highlight .result__a,
+  .highlight .result__a:hover,
+  .result__a:visited,
+  .tag-home__link,
+  .tag-home__link:hover,
+  .tag-home__link:visited,
+  .tag-home__link:active,
+  .tag-home__link:focus,
+  .homepage--text_promo--link,
+  .homepage--text_promo--link:hover,
+  .homepage--text_promo--link:visited,
+  .homepage--text_promo--link:active,
+  .homepage--text_promo--link:focus,
+  .tag-home__nav__close:hover,
+  .page-settings,
+  .frm__label,
+  .badge-link__text,
+  .badge-link__cookie-msg,
+  .no-results__link,
+  .no-results__link:visited,
+  .no-results__link:active,
+  .no-results__link:hover,
+  .vertical--map__sidebar__results__inner .no-results__link,
+  .vertical--map__sidebar__results__inner .no-results__link:hover,
+  .modal__header__title,
+  .modal__header__clear:hover,
+  .modal__list__link,
+  .modal__list__link:hover,
+  .modal__list__link:visited,
+  .modal__list__link:focus,
+  .modal__list__link.is-highlighted,
+  .modal--dropdown .modal__list__link.is-selected,
+  .modal--dropdown .modal__list__link.is-selected:hover,
+  .module--carousel__body__title,
+  .module--carousel__body__title:hover,
+  .module--carousel__body__title:active,
+  .module--carousel__body__title:visited,
+  .module--carousel__left,
+  .module--carousel__right,
+  .is-mobile .module--images .module__toggle,
+  .modal select,
+  .dropdown.is-open .dropdown__button,
+  .dropdown .dropdown__button:hover,
+  .dropdown.dropdown--location .dropdown__button:hover,
+  .feedback-prompt__link:hover,
+  .feedback-btn__icon,
+  .feedback-btn__send,
+  .feedback-modal__heading__prompt.has-category,
+  .feedback-modal__heading__prompt,
+  .feedback-modal .frm__label,
+  .forecast-wrapper .module__more-at .zci__more-at:hover,
+  .forecast-wrapper
+    .module--forecast
+    .module__weather-warning:not(.module__weather-warning--red),
+  .forecast-wrapper
+    .module--forecast
+    .module__weather-warning:hover:not(.module__weather-warning--red),
+  .forecast-wrapper
+    .module--forecast
+    .module__weather-warning:active:not(.module__weather-warning--red),
+  .module__title__link,
+  .module__title__link:hover,
+  .module__title__link:visited,
+  .module__title__link:active,
+  .about-info-box__heading,
+  .about-info-box__link-row__link,
+  .about-info-box__link-row__link:hover,
+  .dropdown--region.has-inactive-region .dropdown__button:hover,
+  .dropdown.is-active:not(.has-inactive-region) .dropdown__button,
+  .module__more-at,
+  .module__more-at:hover,
+  .module__more-at:active,
+  .module__more-at:focus,
+  .module__more-at-bottom,
+  .module__more-at-bottom:hover,
+  .module__official-url,
+  .module__official-url:hover,
+  .module__link,
+  .module__link:hover,
+  .module__link:focus,
+  .module__link:active,
+  .module__link a,
+  .module__link a:hover,
+  .module__link a:focus,
+  .module__link a:active,
+  .address-detail__name,
+  .address-detail .btn.btn--primary,
+  .dir-btn .btn.dir-btn__link,
+  .mapboxgl-ctrl,
+  .mapboxgl-ctrl a,
+  .mapkit-static__attribution,
+  .mapkit-static__cta,
+  .module__header.module__header--link,
+  .module__footer,
+  .module__footer:visited,
+  .module__footer:active,
+  .module__footer:hover,
+  .module__toggle__text,
+  .user-loc-cta__title,
+  .user-loc-filter-modal__title,
+  .user-loc-cta__survey,
+  .user-loc-error__fix__step,
+  .user-loc-title,
+  .user-loc-survey,
+  .user-loc-cta__more,
+  .user-loc-error__text,
+  .user-loc-error .user-loc-error__header,
+  .user-loc-cta,
+  .user-loc-subtitle,
+  .place-list-item__title,
+  .result__sitelinks .sitelink--small__title,
+  .result__sitelinks .sitelink--small__title:active,
+  .result__sitelinks .sitelink--small__title:focus,
+  .result__sitelinks .sitelink--small__title:hover,
+  .vertical--map__search-examples__button,
+  .cloudsave__new-suggestion,
+  .cloudsave__new-suggestion:hover,
+  .footer__text,
+  .set-main .frm__section-label,
+  .frm__select select,
+  .modal--dropdown .modal__list__link.is-selected,
+  .modal--dropdown .modal__list__link.is-selected:visited,
+  .modal--dropdown .modal__list__link.is-selected:hover,
+  .modal--dropdown.modal--dropdown--date .modal__footer .modal__list__link,
+  .modal--dropdown.modal--dropdown--date
+    .modal__footer
+    .modal__list__link:visited,
+  .modal--dropdown.modal--dropdown--date
+    .modal__footer
+    .modal__list__link:hover,
+  .modal--dropdown.modal--dropdown--license .modal__footer .modal__list__link,
+  .modal--dropdown.modal--dropdown--license
+    .modal__footer
+    .modal__list__link:visited,
+  .modal--dropdown.modal--dropdown--license
+    .modal__footer
+    .modal__list__link:hover,
+  .place-detail__status,
+  .place-detail__cta-text {
+    color: #eeeeee !important;
+  }
+
+  code,
+  .set-bookmarklet__input,
+  .set-bookmarklet__data,
+  .btn,
+  .btn:visited,
+  .btn:active,
+  .btn.btn--primary,
+  .btn.btn--secondary,
+  .btn--primary:hover,
+  .btn.is-disabled,
+  .btn.is-disabled:hover,
+  input,
+  textarea,
+  .frm__input,
+  .frm__text,
+  .detail--xd .c-detail__btn,
+  .set-bookmarklet,
+  .set-reset,
+  .frm__select,
+  .frm__select select,
+  .zci--json_validator textarea,
+  .colorpicker,
+  .feedback-modal__submit.is-disabled,
+  .feedback-modal__submit.is-disabled:hover,
+  .feedback-modal__submit.is-disabled:active,
+  .feedback-modal__submit.is-disabled:focus,
+  .most-visited__toggle,
+  .btn.btn--skeleton:hover {
+    background-color: var(--Dark_BackgroundColor) !important;
+    border-color: transparent;
+    color: #eeeeee;
+    text-shadow: none;
+  }
+
+  .module--carousel__left:hover,
+  .module--carousel__right:hover,
+  .tile__expand:hover {
+    background-color: var(--Dark_BackgroundColor) !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    border-color: var(--Dark_BorderColor) !important;
+    color: #eeeeee;
+  }
+
+  .module--carousel__left,
+  .module--carousel__right {
+    background-color: var(--Dark_BackgroundColor) !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    color: #eeeeee;
+    border-color: var(--Dark_BorderColor) !important;
+  }
+
+  .module--carousel .feedback-prompt {
+    bottom: 5px;
+    display: none !important;
+  }
+
+  .dropdown__button {
+    font-variant-caps: petite-caps !important;
+    font-size: 14px !important;
+  }
+
+  .dropdown__button:not(.dropdown__button--no-icon)::after {
+    margin-top: -3px !important;
+    font-size: 8px !important;
+  }
+
+  .module__toggle,
+  .tile__expand {
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: #eeeeee;
+    border-color: var(--Dark_BorderColor) !important;
+    box-shadow: none;
+  }
+
+  .btn.feedback-btn,
+  .btn.feedback-btn a,
+  .feedback-modal__submit.is-disabled,
+  .feedback-modal__submit.is-disabled:hover,
+  .feedback-modal__submit.is-disabled:active,
+  .feedback-modal__submit.is-disabled:focus,
+  .feedback-prompt,
+  .feedback-prompt__link,
+  .feedback-prompt__link:visited,
+  .module--carousel-products.has-grid .module--carousel__main-source a,
+  .module--carousel-products.has-grid .module--carousel__main-source a:visited,
+  .module--carousel .module--carousel__main-source .js-badge--ad,
+  .module--carousel .badge--ad-wrap--product-carousel .js-badge--ad,
+  .module__more-at-and-feedback .module__more-at a,
+  .btn.btn--skeleton,
+  .btn.btn--skeleton:hover,
+  .btn.is-disabled,
+  .btn.is-disabled:hover {
+    color: #666666;
+    display: none !important;
+  }
+}

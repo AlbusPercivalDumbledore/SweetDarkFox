@@ -1,0 +1,128 @@
+@-moz-document domain("insightsonindia.com") {
+  .main_blk li {
+    font-size: 14px !important;
+  }
+
+  img[src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"] {
+    display: none !important;
+  }
+
+  li {
+    letter-spacing: 0.5px;
+    padding: 1px 0 !important;
+    list-style: decimal;
+    font-family: Ubuntu !important;
+  }
+
+  .main_blk p {
+    line-height: 1.3 !important;
+    font-size: 14px !important;
+  }
+
+  p {
+    margin: 0 0 1px !important;
+  }
+
+  .pt-cv-meta-fields {
+    font-size: 13px;
+    margin-top: 0;
+    display: none !important;
+  }
+
+  blockquote {
+    display: none !important;
+  }
+
+  :root #mega-menu-wrap-top #mega-menu-top > li.mega-menu-item {
+    display: block !important;
+    border-bottom: 0px solid #dcdcdc !important;
+    padding-left: 10px !important;
+    height: 32px !important;
+    font-style: italic !important;
+    font-variant: all-petite-caps !important;
+  }
+
+  span[style="color: #0000ff;"] {
+    color: #666 !important;
+  }
+
+  span[style="color: #000000;"] {
+    color: red !important;
+    font-size: 24px !important;
+    font-family: Fira Sans !important;
+  }
+
+  a[href="https://www.insightsonindia.com/faqs-prelims-series/"], a[href="https://www.insightsonindia.com/insights-ias-courses-paid/"], a[href="https://www.insightsonindia.com/kpsc-kas-prelims-cum-mains-course/"], a[href="https://www.insightsonindia.com/strategies-of-optional-subjects-by-toppers/"], a[href="https://forum.insightsonindia.com/forums"], a[href="https://www.insightsonindia.com/category/motivation-2/"], a[href="https://www.insightsonindia.com/toppers-corner/"], a[href="https://www.insightsonindia.com/insightsias-videos-of-toppers-and-motivational-sessions/"], a[href="https://www.insightsonindia.com/important/"], a[href="https://www.insightsonindia.com/ias-myths/"], a[href="https://www.insightsonindia.com/mains-exam-guide/"], a[href="#"], a[href="https://www.insightsonindia.com/frequently-asked-questions-faqs-related-to-various-aspects-of-upsc-ias-exam-preparation/"], a[href="https://www.insightsonindia.com/insta-75-days-revision-tests-2022/"], a[href="https://www.insightsonindia.com/writing-challenges-2/"], a[href="https://www.insightsonindia.com/"]
+  {
+    display: none !important;
+  }
+
+  .searchandfilter {
+    display: none !important;
+  }
+
+  .widget-title {
+    display: none !important;
+  }
+
+  .entry-title {
+    font-size: 14px !important;
+    letter-spacing: 0.3px;
+    line-height: 1.7;
+    color: #666 !important;
+    font-family: Fira Sans !important;
+  }
+
+  .entry-header {
+    text-align: center !important;
+  }
+
+  time.updated {
+    display: none !important;
+  }
+
+  .posted-on > .screen-reader-text {
+    display: none !important;
+  }
+
+  .byline {
+    display: none !important;
+  }
+
+  .entry-date.published {
+    color: chartreuse !important;
+    font-family: Fira Sans !important;
+  }
+
+  .pt-cv-title {
+    text-align: center !important;
+  }
+
+  :root .pt-cv-title > a {
+    color: gold !important;
+  }
+
+  .navigation.post-navigation {
+    display: none !important;
+  }
+
+  .cat-links {
+    display: none !important;
+  }
+
+  #mega-menu-wrap-top #mega-menu-top > li.mega-menu-item > a.mega-menu-link {
+    line-height: auto;
+    height: auto;
+    padding: 0px !important;
+  }
+
+  .sidebar {
+    display: none !important;
+  }
+
+  @media (min-width: 992px) {
+    .col-md-10 {
+      width: 99.33333333% !important;
+    }
+  }
+}

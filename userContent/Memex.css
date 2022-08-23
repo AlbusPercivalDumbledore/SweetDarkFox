@@ -1,0 +1,18 @@
+.ar.article_subscribed {
+  background: #000 !important;
+}
+
+.article_content {
+  font-family: Fira Sans !important;
+  font-size: 15px !important;
+}
+
+.article_content ul,
+.pin_container,
+.underlink.bluelink {
+  display: none !important;
+}
+
+#sb_reading_part * {
+  font-size: 13px !important;
+}

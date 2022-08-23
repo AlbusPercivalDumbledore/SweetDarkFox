@@ -1,0 +1,27 @@
+/*To use these addons, you'll need to download Firefox Banner*/
+.GetFirefoxBanner {
+  border-radius: 4px !important;
+  box-shadow: 0 !important;
+  color: #fff !important;
+  font-size: 14px;
+  left: 50%;
+  padding: 0px !important;
+  position: fixed;
+  text-align: center;
+  transform: translate(-50%);
+  width: 25% !important;
+  z-index: 1000;
+  font-family: Fira Sans !important;
+  background: #000 !important;
+}
+
+.GetFirefoxBanner-button,
+.GetFirefoxBanner-button:link {
+  color: gold !important;
+  font-variant: petite-caps !important;
+  font-size: 15px !important;
+}
+
+.IconXMark-svg {
+  filter: invert(0.4) !important;
+}

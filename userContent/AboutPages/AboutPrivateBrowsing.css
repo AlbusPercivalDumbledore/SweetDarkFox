@@ -1,0 +1,44 @@
+/*+++++ NEW PRIVATE TAB PAGE +++++*/
+
+@-moz-document url("about:privatebrowsing") {
+  .info,
+  /*#private-browsing-vpn-link,*/
+  #private-browsing-vpn-text,
+  #private-browsing-myths,
+  .search-inner-wrapper,
+  .logo-and-wordmark,
+  .logo,
+  .wordmark,
+  #private-browsing-vpn-link {
+    display: none !important;
+  }
+
+  .logo {
+    background-size: 50px !important;
+    height: 50px !important;
+    width: 50px !important;
+    /*filter: contrast(2) !important;*/
+  }
+
+  .wordmark {
+    background: url("chrome://branding/content/firefox-wordmark.svg") no-repeat
+      center center;
+    background-size: auto;
+    background-size: 150px !important;
+    -moz-context-properties: fill;
+    display: inline-block;
+    fill: #fff !important;
+    height: 80px !important;
+    margin-inline-start: 15px;
+    width: 150px !important;
+    filter: contrast(2) !important;
+  }
+
+  .logo-and-wordmark {
+    /*background: rgba(0, 0, 0, 0.7) !important;*/
+    padding-right: 15px !important;
+    border-radius: 15px !important;
+    padding-left: 15px !important;
+    /*border: 2px solid #dc2430 !important;*/
+  }
+}

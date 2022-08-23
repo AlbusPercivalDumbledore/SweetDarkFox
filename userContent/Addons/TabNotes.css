@@ -1,0 +1,42 @@
+@-moz-document url-prefix(moz-extension://58d430ac-3b57-4fd2-8307-34599499c447/newtab.html)
+{
+  .create_entry,
+  .del,
+  #list,
+  #list li > span,
+  #list-trigger span,
+  #note-content {
+    transition-duration: 0.2s;
+    background: #000 !important;
+    font-family: Fira Sans !important;
+    font-size: 14px !important;
+  }
+
+  #list .current span {
+    text-transform: none !important;
+    opacity: 1;
+  }
+
+  #list-indicator:checked ~ #list {
+    left: 0;
+    box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.27),
+      0 0 9px 0px rgba(0, 0, 0, 0.05);
+    border-right: 2px solid red !important;
+  }
+
+  #list li > span {
+    padding: 5px !important;
+    border-bottom: 0 !important;
+  }
+
+  #list li:first-child {
+    counter-reset: nth-tab 0;
+  }
+
+  #list li > span::before {
+    content: counter(nth-tab) " ";
+    counter-increment: nth-tab;
+    margin-right: 10px !important;
+    margin-left: 5px !important;
+  }
+}

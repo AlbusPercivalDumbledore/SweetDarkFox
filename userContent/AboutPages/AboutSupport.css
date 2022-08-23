@@ -1,0 +1,66 @@
+/* ABOUT:SUPPORT */
+
+@-moz-document url-prefix("about:support") {
+  table {
+    border: 0px !important;
+    font-size: 1.1rem !important;
+  }
+
+  h2 {
+    color: var(--Dark_TextColor) !important;
+    text-align: center !important;
+    font-variant-caps: petite-caps !important;
+  }
+  
+  h1,
+  div[data-l10n-id="page-subtitle"] {
+    display: none !important;
+  }
+  
+  .wide-container {
+    display: grid !important;
+  }
+  
+  .wide-container::before {
+    content: "Support - Troubleshoot Firefox" !important;
+    font-family: Fira Sans !important;
+    display: block !important;
+    color: #fff !important;
+    font-size: 36px !important;
+    font-variant: petite-caps !important;
+    margin-bottom: 50px !important;
+    margin-top: 30px !important;
+    text-align: center !important;
+  }
+  
+  .action-box {
+    width: 50% !important;
+    display: flex !important;
+    padding: 7px !important;
+    text-align: center !important;
+    margin: auto !important;
+    border: 0 !important;
+    /*transform: scale(0.85) !important;*/
+  }
+
+  .action-box h3 {
+    font-variant-caps: petite-caps !important;
+    display: none !important;
+    margin: auto !important;
+    margin-inline-start: 15px !important;
+    margin-inline-end: 15px !important;
+    margin-bottom: 20px !important;
+    font-size: 22px !important;
+  }
+  
+  .action-box button {
+    text-align: center !important;
+   /* border: 0 !important;*/
+  }
+  
+  .page-subtitle + div {
+    display: block !important;
+    margin: auto !important;
+    margin-top: 30px !important;
+  }
+}

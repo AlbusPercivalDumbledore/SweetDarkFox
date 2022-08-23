@@ -1,0 +1,19 @@
+@-moz-document domain("reddit.com") {
+  .thumbnail.invisible-when-pinned.self.may-blank {
+    filter: invert(1) contrast(2) !important;
+  }
+
+  .comments-page .usertext-edit div textarea {
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    border: 2px solid var(--Dark_BorderColor) !important;
+    opacity: 1 !important;
+  }
+
+  .comments-page .usertext-edit div textarea:focus {
+    background: var(--Dark_BackgroundColor) !important;
+    opacity: 1;
+    border-color: red !important;
+    color: var(--Dark_TextColor) !important;
+  }
+}

@@ -1,0 +1,73 @@
+@-moz-document domain("libredd.it") {
+  :root,
+  .dark {
+    --accent: #dc2430 !important;
+    --green: #5cff85;
+    --text: #fff !important;
+    --foreground: #000 !important;
+    --background: #000 !important;
+    --outside: #000 !important;
+    --post: #000 !important;
+    --panel-border: 1px solid #181818 !important;
+    --highlighted: #181818 !important;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  nav {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  nav #version {
+    display: none !important;
+  }
+
+  #searchbox {
+    margin-left: 800px !important;
+  }
+
+  select,
+  #search,
+  #sort_options,
+  #inside,
+  #searchbox > *,
+  #sort_submit {
+    height: 30px !important;
+  }
+
+  html,
+  body,
+  div,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  dl,
+  li,
+  dt,
+  dd,
+  p,
+  blockquote,
+  pre,
+  form,
+  fieldset,
+  table,
+  th,
+  td,
+  select,
+  input {
+    margin: 0;
+    color: var(--text);
+    font-family: Fira Sans !important;
+  }
+
+  #sort_options > a,
+  footer > a {
+    color: var(--text);
+    padding: 5px 10px !important;
+  }
+}

@@ -1,0 +1,28 @@
+/* Illustrations Page */
+
+@-moz-document url-prefix(chrome: //browser/skin/illustrations/)
+{
+  :root {
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+  }
+
+  body {
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
+  }
+
+  td:first-child > a {
+    white-space: pre;
+    font-size: 1.2rem !important;
+    color: rgb(252, 216, 102) !important;
+  }
+
+  .up {
+    padding: 0 0.5em;
+    margin-inline-start: 20px;
+    color: greenyellow !important;
+    font-size: 1.2rem !important;
+  }
+}

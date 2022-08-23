@@ -1,0 +1,109 @@
+@-moz-document url-prefix(moz-extension://983ba7a0-4475-404b-8a8e-34d411c531dc/panel/panel.html)
+{
+  html {
+    background: #000 !important;
+  }
+
+  body {
+    font-family: Fira Sans !important;
+    color: red !important;
+    background-color: #000 !important;
+  }
+
+  .btn {
+    padding: 3px !important;
+    font-size: 12px !important;
+    line-height: 1.25 !important;
+    border-radius: 2px !important;
+    background: transparent !important;
+    color: #fff !important;
+  }
+
+  .btn-block + .btn-block {
+    margin-top: 0.25rem !important;
+  }
+
+  .info-buttons {
+    margin: 5px !important;
+  }
+
+  .info-buttons > #stats-link {
+    font-variant: petite-caps !important;
+  }
+}
+
+@-moz-document url-prefix(moz-extension://983ba7a0-4475-404b-8a8e-34d411c531dc/stats/stats.html)
+{
+  html,
+  body {
+    background: #000 !important;
+    color: #fff !important;
+  }
+
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 0 !important;
+  }
+  .table td,
+  .table th {
+    padding: 0 !important;
+    vertical-align: top;
+    border-top: 0 !important;
+  }
+
+  #completed-tomato-dates-chart {
+    filter: invert(1) !important;
+  }
+
+  #date-range-picker {
+    filter: invert(1) !important;
+    font-family: Fira Sans !important;
+    font-size: 14px !important;
+    color: #000 !important;
+  }
+
+  .daterangepicker.dropdown-menu.ltr.opensright {
+    filter: invert(1) !important;
+    font-family: Fira Sans !important;
+  }
+
+  table {
+    border-collapse: collapse;
+    color: #fff !important;
+    font-family: Fira Sans !important;
+    font-size: 13px !important;
+  }
+
+  .btn {
+    padding: revert !important;
+    font-size: 13px !important;
+    font-family: Fira Sans !important;
+  }
+
+  .h1,
+  h1 {
+    font-size: 2rem !important;
+    font-variant: petite-caps !important;
+  }
+}
+
+@-moz-document url-prefix(moz-extension://983ba7a0-4475-404b-8a8e-34d411c531dc/options/options.html)
+{
+  body {
+    font-size: 13px !important;
+    font-family: Fira Sans !important;
+    color: #fff !important;
+  }
+
+  input {
+    filter: invert(1) !important;
+    font-size: 13px !important;
+    font-family: Fira Sans !important;
+  }
+
+  .btn {
+    padding: revert !important;
+    font-size: 13px !important;
+    font-family: Fira Sans !important;
+  }
+}

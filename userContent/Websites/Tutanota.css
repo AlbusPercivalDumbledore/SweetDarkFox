@@ -1,0 +1,59 @@
+@-moz-document domain("tutanota.com") {
+  body {
+    position: fixed;
+    background-color: #000 !important;
+    filter: invert(1) !important;
+  }
+
+  body,
+  button {
+    font-family: Fira Sans !important;
+  }
+
+  .header-nav {
+
+    position: relative;
+    height: 30px !important;
+    background-color: #ffffff;
+    box-shadow: none !important;
+    z-index: 2;
+    margin-top: env(safe-area-inset-top);
+
+}
+
+.pl {
+    padding-left: 5px !important;
+}
+
+.logo-height > svg, .logo-height > img {
+
+    height: 25px !important;
+    margin-top: 5px !important;
+
+}
+
+.logo-height > svg > path {
+    filter: invert(1) !important;
+}
+
+.row-selected {
+    border-color: #9aeaf8 !important;
+    color: #000 !important;
+}
+
+.limit-width.noselect.bg-transparent.button-height.full-width {
+
+    border: 1px solid greenyellow !important;
+
+}
+
+button[title="Premium"], button[title="Show help"], button[title="Invite"] {
+    display: none !important;
+}
+
+.folder-row.plr-l.flex.flex-row {
+    height: 30px !important;
+}
+
+
+}

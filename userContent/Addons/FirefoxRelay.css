@@ -1,0 +1,26 @@
+/*+++++ Firefox Relay EXTENSION +++++*/
+
+@-moz-document url-prefix(moz-extension://fb1768ef-febd-4da8-a607-f2a2e9da778f/)
+{
+  * {
+    color: var(--Dark_TextColor) !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  fx-relay-logotype,
+  fx-relay-logomark {
+    filter: invert(1) !important;
+  }
+
+  .blue-primary-btn {
+    background: var(--Dark_BackgroundColor) !important;
+    min-width: none !important;
+    min-height: none !important;
+    padding: 6px 8px !important;
+    border-radius: 2px !important;
+  }
+
+  .blue-primary-btn:hover {
+    background: #181818 !important;
+  }
+}

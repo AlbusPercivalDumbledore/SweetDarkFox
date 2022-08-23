@@ -1,0 +1,15 @@
+/*+++++ BYPASS PAYWALS EXTENSION +++++*/
+
+@-moz-document url-prefix(moz-extension://0d531bb4-efce-477a-8612-e53d79dc3080/)
+{
+  body {
+    background-color: #181818 !important;
+    color: var(--Dark_TextColor) !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1rem !important;
+  }
+
+  div {
+    width: 250px !important;
+  }
+}

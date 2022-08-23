@@ -1,0 +1,188 @@
+@-moz-document domain("google.com") {
+  * {
+    font-family: Fira Sans !important;
+  }
+
+  #gws-output-pages-elements-homepage_additional_languages__als {
+    font-size: small;
+    margin-bottom: 24px;
+    display: none !important;
+  }
+
+  input[value="I'm Feeling Lucky"],
+  input[value="Google Search"] {
+    display: none !important;
+  }
+
+  .o3j99.n1xJcf.Ne6nSd {
+    visibility: hidden !important;
+    margin-bottom: 20px !important;
+  }
+
+  .UG0mTe.FpiMuf.q8U8x {
+    margin-top: 20px !important;
+  }
+
+  .lnXdpd {
+    display: none !important;
+  }
+}
+
+@-moz-document domain("drive.google.com") {
+  #drive_main_page {
+    filter: invert(1) !important;
+    background: #fff !important;
+  }
+
+  img {
+    filter: invert(1) !important;
+  }
+
+  img[src="https://ssl.gstatic.com/docs/doclist/images/empty_state_details.png"]
+  {
+    display: none !important;
+  }
+
+  div[role="dialog"] {
+    filter: invert(1) !important;
+  }
+
+  div[role="presentation"] {
+    filter: invert(1) !important;
+    background: #fff !important;
+  }
+
+  .af {
+    filter: invert(1) contrast(2) !important;
+  }
+}
+
+@-moz-document domain("mail.google.com") {
+  body {
+    filter: invert(1) !important;
+  }
+
+  img {
+    filter: invert(1) !important;
+  }
+}
+
+@-moz-document domain("docs.google.com") {
+  .docs-gm {
+    filter: invert(1) !important;
+  }
+
+  .docs-homescreen-grid-item-thumbnail {
+    filter: invert(1) !important;
+    opacity: 0.5 !important;
+  }
+
+  img {
+    filter: invert(1) !important;
+  }
+}
+
+@-moz-document domain("keep.google.com") {
+  body {
+    filter: invert(1) !important;
+    background: #000 !important;
+  }
+
+  .MTmRkb {
+    filter: invert(1) !important;
+  }
+
+  .RY3tic {
+    filter: invert(1) !important;
+  }
+
+  img {
+    filter: invert(1) !important;
+  }
+
+  .A7ANFe {
+    background: #fff !important;
+  }
+
+  #gb {
+    box-shadow: none !important;
+  }
+
+  .PvRhvb-bN97Pc {
+    width: 180px !important;
+  }
+
+  .PL7Zl-h1U9Be-hxXJme.IZ65Hb-TBnied,
+  .oq6NAc-h1U9Be-hxXJme.IZ65Hb-TBnied {
+    filter: invert(1) !important;
+  }
+
+  .IZ65Hb-n0tgWb.cXXICe-bnBfGc .hSRGPd-e1YmVc,
+  .ma6Yeb-r8s4j-gkA7Yd .hSRGPd-e1YmVc {
+    border-top: none !important;
+  }
+
+  .PvRhvb-qAWA2 .PvRhvb-bN97Pc:hover .PvRhvb-ibnC6b,
+  .PvRhvb-ibnC6b {
+    padding-left: 8px !important;
+  }
+
+  body.kPTQic-nUpftc .PvRhvb:not(.PvRhvb-qAWA2) .PvRhvb-bN97Pc .PvRhvb-ibnC6b,
+  .PvRhvb-qAWA2 .PvRhvb-bN97Pc:hover .PvRhvb-ibnC6b,
+  .PvRhvb-ibnC6b {
+    height: 36px !important;
+  }
+
+  .gb_pa:not(.gb_qa) .gb_Fd {
+    padding: 0px !important;
+  }
+
+  .mdiTk .x5ghY-MJoBVe-yOOK0,
+  .GEUYHe .x5ghY-MJoBVe-yOOK0,
+  .x00ATb .x5ghY-MJoBVe-yOOK0,
+  .eNQpWc .x5ghY-MJoBVe-yOOK0 {
+    border: 2px solid #111 !important;
+  }
+}
+
+@-moz-document domain("calendar.google.com") {
+  body {
+    filter: invert(1) !important;
+  }
+
+  .QQYuzf {
+    background: #fff !important;
+  }
+}
+
+@-moz-document domain("photos.google.com") {
+  body {
+    background: #000 !important;
+  }
+
+  .RSjvib {
+    background-color: #000 !important;
+    transform: scale(0.9) !important;
+  }
+
+  .RSjvib .oUj9s:hover {
+    background: #141414 !important;
+  }
+
+  .QtDoYb {
+    background: #000 !important;
+    border-bottom: none !important;
+  }
+
+  .RSjvib .uprWmb {
+    background: #141414 !important;
+  }
+
+  .Aul2T {
+    filter: invert(1) !important;
+  }
+
+  .q2Kjtf {
+    filter: invert(1) !important;
+  }
+}

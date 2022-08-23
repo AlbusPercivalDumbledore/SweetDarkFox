@@ -1,0 +1,68 @@
+/*+++++ NEW TAB PAGE +++++*/
+
+.customize-menu {
+  display: none !important;
+}
+
+@-moz-document url("about:newtab"),
+url("about:home") {
+  .meta,
+  .context-menu-list,
+  .ds-image img,
+  .ds-image .broken-image,
+  .ds-card .img,
+  .ds-card .img-wrapper {
+    background: var(--Dark_ActiveColor) !important;
+  }
+
+  .collapsible-section.active {
+    background: var(--Dark_BackgroundColor) !important;
+  }
+
+  .icon.icon-settings,
+  .personalize-button,
+  .search-wrapper .logo-and-wordmark .wordmark,
+  .search-wrapper .logo-and-wordmark .logo,
+  .search-inner-wrapper,
+  .search-wrapper .logo-and-wordmark,
+  .body-wrapper.on,
+  .collapsible-section.ds-layout .section-top-bar .learn-more-link a {
+    display: none !important;
+  }
+
+  .logo-and-wordmark {
+    background: rgba(0, 0, 0, 0.7) !important;
+    padding-right: 15px !important;
+    border-radius: 15px !important;
+    padding-left: 15px !important;
+    margin-top: 150px !important;
+    margin-left: 370px !important;
+    margin-right: 370px !important;
+    /*border: 2px solid #dc2430 !important;*/
+  }
+
+  .logo {
+    background-size: 50px !important;
+    height: 50px !important;
+    width: 50px !important;
+    /*filter: contrast(2) !important;*/
+  }
+
+  .wordmark {
+    background-size: 150px !important;
+    height: 80px !important;
+    width: 150px !important;
+    filter: contrast(2) !important;
+  }
+}
+
+@-moz-document url('about:home'), url('about:newtab'), url("about:privatebrowsing") {
+  body {
+    background-image: url(Icons/);
+    background-repeat: no-repeat !important;
+    background-position: center bottom !important;
+    background-size: cover !important;
+    /*margin-left: 225px !important;*/
+    filter: contrast(0.95) !important;
+  }
+}

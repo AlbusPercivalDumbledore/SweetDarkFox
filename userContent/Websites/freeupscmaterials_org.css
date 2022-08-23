@@ -1,0 +1,59 @@
+@-moz-document domain("freeupscmaterials.org") {
+  * {
+    font-family: Fira Sans !important;
+    background: #000 !important;
+    color: #b4b4b4 !important;
+  }
+
+  .separate-containers .page-header,
+  .separate-containers .site-main > *,
+  .separate-containers .widget {
+    margin-bottom: 0px !important;
+  }
+
+  .separate-containers .comments-area,
+  .separate-containers .inside-article,
+  .separate-containers .page-header,
+  .separate-containers .paging-navigation {
+    padding: 0px !important;
+  }
+
+  .main-navigation .main-nav ul li a,
+  .menu-toggle,
+  .main-navigation .mobile-bar-items a {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    line-height: 35px !important;
+  }
+
+  #primary {
+    width: 100% !important;
+  }
+
+  a {
+    color: slategray !important;
+  }
+
+  ul {
+    list-style: katakana-iroha !important;
+  }
+
+  .byline {
+    display: none !important;
+  }
+
+  h1,
+  h2 {
+    font-weight: 300;
+    font-size: 24px !important;
+  }
+
+  #main {
+    align-content: center !important;
+    text-align: center !important;
+  }
+
+  hr {
+    display: none !important;
+  }
+}

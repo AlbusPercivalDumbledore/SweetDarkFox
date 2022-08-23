@@ -1,0 +1,35 @@
+/* ABOUT:CACHE */
+
+@-moz-document url("about:cache") {
+  body {
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  a,
+  td {
+    font-family: "Fira Sans" !important;
+  }
+
+  a {
+    color: gold !important;
+  }
+}
+
+@-moz-document url-prefix("about:cache?storage=memory"), url-prefix("about:cache-entry?") {
+  body,
+  .aboutPageWideContainer {
+    color: var(--Dark_TextColor) !important;
+  }
+
+  a {
+    color: var(--Dark_LinkColor) !important;
+  }
+
+  a,
+  td {
+    font-family: Fira Sans !important;
+  }
+}

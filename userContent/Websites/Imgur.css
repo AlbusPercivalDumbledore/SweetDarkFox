@@ -1,0 +1,10 @@
+@-moz-document domain("imgur.com") {
+  body,
+  div {
+    background-color: var(--Dark_BackgroundColor) !important;
+  }
+
+  .GalleryPage-background {
+    background: var(--Dark_BackgroundColor) !important;
+  }
+}

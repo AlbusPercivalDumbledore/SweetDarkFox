@@ -1,0 +1,237 @@
+@-moz-document domain("searx.be") {
+
+.result_header {
+
+    font-size: 19px !important;
+    font-weight: 600 !important;
+    font-family: Fira Sans !important;
+
+}
+
+:root .result_header a {
+
+    color: #fff !important;
+
+}
+
+#categories .input-group-addon, #categories label, .search_categories .input-group-addon, .search_categories label {
+
+    flex-grow: 1;
+    flex-basis: auto;
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    background-color: #fff;
+    border: none !important;
+        border-top-color: currentcolor;
+        border-right-color: currentcolor;
+        border-right-style: none;
+        border-right-width: medium;
+        border-bottom-color: currentcolor;
+        border-left-color: currentcolor;
+    color: #fff !important;
+    padding-bottom: .4rem;
+    padding-top: .4rem;
+    text-align: center;
+    min-width: 50px !important;
+    max-width: 75px !important;
+    font-variant-caps: all-petite-caps !important;
+    border-right: none !important;
+
+}
+
+#categories input[type="checkbox"]:checked + label, .search_categories input[type="checkbox"]:checked + label {
+
+    color: #29314D;
+    font-weight: 700;
+    border-bottom: 2px solid red !important;
+
+}
+
+a[href="/donate"] {
+
+    display: none !important;
+
+}
+
+.external-link {
+
+    color: #5f8e15 !important;
+    font-size: 13px !important;
+    margin-bottom: 0px !important;
+    font-family: Ubuntu !important;
+    font-weight: 600 !important;
+    
+}
+
+.result-content, .result-format, .result-source {
+
+    margin-top: 2px;
+    margin-bottom: 0;
+    word-wrap: break-word;
+    color: #757575 !important;
+    font-size: 13px;
+    font-family: Fira Sans !important;
+    margin-left: 5px !important;
+	margin-right: 5px !important;
+
+}
+
+:root select.form-control {
+
+    border-color: #222 !important;
+    background: transparent;
+
+}
+
+#search_form > .row {
+
+    font-family: Ubuntu !important;
+
+}
+
+.search-margin > select.form-control {
+
+    border-color: #222 !important;
+    background: transparent !important;
+
+}
+
+.form-control.input-lg.autofocus.tt-input:focus {
+
+    border: none !important;
+    box-shadow: none !important;
+
+}
+
+#main-logo > img {
+
+    max-width: 350px;
+    width: 30% !important;
+    margin-bottom: 15px !important;
+    filter: invert(0.5) !important;
+
+}
+
+.form-control.input-lg.autofocus.tt-input {
+
+    border: none !important;
+    background: #000 !important;
+    font-size: 14px !important;
+    font-family: ubuntu !important;
+
+}
+
+label[for="check-advanced"] {
+
+    margin-top: 15px !important;
+
+}
+
+label[for="check-advanced"] > .glyphicon.glyphicon-cog {
+
+    margin-right: 5px !important;
+
+}
+
+.footer {
+
+    font-family: ubuntu !important;
+    font-weight: 600 !important;
+
+}
+
+:root .infobox_part, .infobox p {
+
+    font-family: ubuntu !important;
+
+}
+
+.result_header .favicon {
+
+    margin-bottom: 0px !important;
+    margin-right: 10px !important;
+
+}
+
+
+#sidebar_results {
+
+    font-family: ubuntu;
+
+}
+
+.searxng-navbar .instance.pull-left a {
+
+    color: #fff !important;
+    font-size: 15px !important;
+
+}
+
+.searxng-navbar {
+
+    background: #29314D;
+        background-color: rgb(41, 49, 77);
+        background-image: none;
+    height: 2.3rem;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    padding: .5rem;
+    font-weight: 700;
+    margin-bottom: 1.8rem !important;
+    margin-top: 5px !important;
+    font-family: ubuntu !important;
+
+}
+
+#main_results > .result:hover {
+
+    background: #090909 !important;
+
+}
+
+#main_results > .result {
+
+    padding: 10px !important;
+    margin-bottom: 20px !important;
+    border-radius: 5px !important;
+
+}
+
+.panel {
+	border-radius: 5px !important;
+}
+
+[class*="border"], div, ::before, ::after {
+
+    border-color: #181818 !important;
+
+}
+
+.form-control.tt-input {
+
+    background: #000 !important;
+    border: 0 !important;
+    padding: 10px !important;
+
+}
+
+.form-control.tt-input:focus {
+    border: 0 !important;
+    box-shadow: none !important;
+
+}
+
+:root .glyphicon.glyphicon-remove, :root .glyphicon.glyphicon-search {
+
+    color: #ce1e3f !important;
+
+}
+
+#main_results {
+
+    padding-left: 15px !important;
+    padding-top: 5px !important;
+
+}
+
+}

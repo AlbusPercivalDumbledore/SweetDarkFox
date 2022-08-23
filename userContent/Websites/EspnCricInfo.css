@@ -1,0 +1,83 @@
+@-moz-document domain("espncricinfo.com") {
+  * {
+    background-color: var(--Dark_BackgroundColor) !important;
+    border: 0px !important;
+  }
+
+  body,
+  div,
+  p,
+  li,
+  a {
+    color: var(--Dark_TextColor) !important;
+  }
+
+  span {
+    color: #a9dc76 !important;
+  }
+
+  td {
+    color: #fc9867 !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  th {
+    color: #ab9df2 !important;
+  }
+
+  .chart-table-container table caption .title,
+  .feed-item,
+  .font-weight-bold,
+  .form-inline .btn:hover,
+  .innings-stat table thead td,
+  .live-scorecard table .player-name,
+  .match-live .head-to-head-table thead td,
+  .match-live .link-container a,
+  .match-live .players-to-watch .player .player-stats .stat .title,
+  .match-story-content .story-container table caption,
+  .match-winner-score,
+  .nav-tabs .nav-link,
+  .no-matches-div .redirect-link,
+  .page-story-content .story-container table caption,
+  .player-stats .runs,
+  .player-stats .stat .title,
+  .player-stats .stat .value,
+  .primary-navbar .nav-item .dropdown-menu .nav-item:hover .nav-link,
+  .primary-navbar .nav-link.active,
+  .scorecard-summary .innings-row .player .stats,
+  .scorecard-summary .innings-title,
+  .section-header .header-link,
+  .sidebar-head > .head-title,
+  .slice-text,
+  .video-description .video-subtitle,
+  .video-genre .video-genre-logo .video-genre__title,
+  .video-header .video-header__logo .video-genre__title,
+  .video-header .video-header__submenu ul > li a,
+  .video-hero .video-hero-duration span,
+  .video-hero .video-hero-subtitle,
+  .video-img-duration,
+  .video-info .video-info__details .video-info__tag,
+  .video-sub-navbar
+    .navbar
+    .custom-scroll
+    .navbar-nav
+    .more-item
+    .dropdown-menu
+    ul
+    .dropdown-item:hover,
+  .video-subnav-mobile ul > li > a,
+  b,
+  strong,
+  .innings-stat table.sidebar-widget-table thead th,
+  .match-story-content .story-container table.sidebar-widget-table thead th,
+  .page-story-content .story-container table.sidebar-widget-table thead th,
+  .sidebar-widget-table.table thead th {
+    font-family: BentonSans-Bold, Arial, Noto Sans, sans-serif;
+    font-weight: 700;
+    color: #fc9867 !important;
+  }
+}

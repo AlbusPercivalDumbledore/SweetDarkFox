@@ -1,0 +1,74 @@
+/*+++++ READER VIEW +++++*/
+
+@-moz-document url-prefix(about:reader) {
+  body,
+  body.dark {
+    background-color: var(--Dark_BackgroundColor) !important;
+    --main-background: var(--Dark_BackgroundColor) !important;
+    --main-foreground: var(--Dark_TextColor) !important;
+    --toolbar-border: var(--Dark_BorderColor) !important;
+    --toolbar-box-shadow: var(--Dark_BackgroundColor) !important;
+    --toolbar-button-hover: var(--Dark_ActiveColor) !important;
+    --toolbar-button-active: var(--Dark_BorderColor) !important;
+    --popup-button-active: var(--Dark_BorderColor) !important;
+    --popup-bgcolor: var(--Dark_BackgroundColor) !important;
+    --popup-button: var(--Dark_ActiveColor) !important;
+    --popup-line: var(--Dark_BorderColor) !important;
+    --selected-background: var(--Dark_BorderColor) !important;
+    --link-foreground: var(--Dark_LinkColor) !important;
+    --visited-link-foreground: var(--Dark_LinkColor) !important;
+    --link-selected-foreground: var(--Dark_TextColor);
+    --opaque-popup-border: var(--Dark_BorderColor) !important;
+    --font-value-border: var(--Dark_BackgroundColor) !important;
+    --font-color: var(--Dark_TextColor);
+    --icon-fill: var(--Dark_TextColor);
+    --icon-disabled-fill: var(--Dark_TextColor) fff66;
+    --tooltip-background: var(--Dark_BackgroundColor) !important;
+    --tooltip-foreground: var(--Dark_TextColor) !important;
+  }
+
+  body.serif,
+  body.serif .remove-button {
+    font-family: fira sans !important;
+  }
+
+  .toolbar {
+    padding-block: 0px !important;
+    border: 1px solid var(--toolbar-border);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px var(--toolbar-box-shadow);
+    width: 30px !important;
+    --inline-padding: 5px !important;
+    padding-inline: 5px !important;
+    margin-inline-start: 25px !important;
+    font-family: Fira Sans !important;
+    list-style: none;
+    user-select: none;
+  }
+
+  .moz-reader-content {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .moz-reader-content a,
+  .moz-reader-content code {
+    font-family: Fira Sans !important;
+  }
+
+  hr {
+    border-color: var(--Dark_BorderColor) !important;
+  }
+
+  .header > .credits {
+    font-size: 0.9em;
+    line-height: 1.48em;
+    margin: 0 0 10px;
+    padding: 0;
+    font-style: normal !important;
+  }
+
+  .domain-border {
+    display: none !important;
+  }
+}

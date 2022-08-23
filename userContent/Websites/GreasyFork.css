@@ -1,0 +1,5 @@
+@-moz-document domain("greasyfork.org") {
+  #user-profile {
+    background: var(--Dark_BackgroundColor) !important;
+  }
+}

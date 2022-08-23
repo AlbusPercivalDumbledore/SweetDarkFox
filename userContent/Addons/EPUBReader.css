@@ -1,0 +1,52 @@
+/*+++++ EPUB READER +++++*/
+
+@-moz-document url-prefix(moz-extension://26b6478f-e321-4704-bee0-328154faf657/)
+{
+  #browse {
+    transform: scale(0.3) !important;
+    background: var(--Dark_BackgroundColor) !important;
+  }
+
+  td {
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    font-size: 0.8rem !important;
+    font-family: fira sans !important;
+  }
+
+  tr {
+    border: 0px !important;
+  }
+
+  div {
+    color: var(--Dark_TextColor) !important;
+    border: none !important;
+  }
+
+  #toolbar {
+    transform: scale(0.4) !important;
+  }
+
+  #donate,
+  #faq {
+    display: none !important;
+  }
+
+  #preferences {
+    background-image: url("skin/preferences.png");
+    transform: scale(0.7) !important;
+  }
+
+  center {
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+  }
+
+  #closepref {
+    transform: scale(0.4) !important;
+  }
+
+  .calibre {
+    filter: invert(1) !important;
+  }
+}

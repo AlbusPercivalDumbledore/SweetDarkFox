@@ -1,0 +1,71 @@
+/*+++++ Translate Web Pages Extension +++++*/
+
+@-moz-document url-prefix(moz-extension://7e0c9490-cb5a-4874-b586-521562971e1b/)
+{
+  body {
+    color: rgb(231, 230, 228) !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    font-family: Fira Sans !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
+  }
+
+  [type="checkbox"],
+  [type="radio"] {
+    padding: 0;
+    transform: scale(0.5) !important;
+    filter: invert(1) !important;
+  }
+
+  .w3-light-blue,
+  .w3-hover-light-blue:hover,
+  .w3-button:hover {
+    color: var(--Dark_TextColor) !important;
+    background-color: #181818 !important;
+  }
+
+  .w3-light-grey,
+  .w3-hover-light-grey:hover,
+  .w3-light-gray,
+  .w3-hover-light-gray:hover,
+  #btnSwitchInterfaces:hover,
+  #divMenu:hover {
+    color: var(--Dark_TextColor) !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+  }
+
+  .w3-bar .w3-bar-item {
+    padding: 4px 8px !important;
+    float: left;
+    width: auto;
+    border: 1px solid #181818 !important;
+  }
+
+  .w3-buttonSelected {
+    background: #181818 !important;
+  }
+
+  .w3-text-pale-blue {
+    display: none !important;
+  }
+
+  .w3-bar button {
+    width: auto !important;
+  }
+
+  hr {
+    border-color: #181818 !important;
+  }
+
+  #divIconTranslate > img {
+    padding: 0;
+    transform: scale(0.6) !important;
+  }
+
+  html,
+  body {
+    font-family: Fira Sans !important;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 250px !important;
+  }
+}

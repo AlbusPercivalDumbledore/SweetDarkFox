@@ -1,0 +1,89 @@
+@-moz-document domain("outlook.live.com") {
+
+
+
+:root{
+--black: #ffffff !important;
+--white: #000 !important;
+--neutralLighter: #000 !important;
+--neutralLighterAlt: #000 !important;
+--composeNeutralBackground: #000 !important;
+}
+
+#o365header {
+  transform: scale(0.85) !important;
+  margin-top: -8px !important;
+  margin-bottom: -4px !important;
+}
+
+.o365sx-navbar {
+  background-color: #000 !important;
+}
+
+#owaMeetNowButton_container {
+  display: none !important;
+}
+
+#O365_MainLink_Help {
+  display: none !important;
+}
+
+#owaWhatsNewBtn_container {
+  display: none !important;
+}
+
+#skype_container {
+  display: none !important;
+}
+
+.o365cs-base .o365sx-button {
+  color: #fff;
+  background-color: #000 !important;
+}
+
+.o365cs-base .o365sx-appName, .o365cs-base .o365sx-appName:visited {
+  color: #fff;
+  background-color: #000 !important;
+}
+
+.GJoz3Svb7GjPbATIMTlpL.lZNvAQjEfdlNWkGGuJb7d {
+  border-radius: 2px;
+  background: transparent;
+  -webkit-transition: background-color .156s ease;
+  transition: background-color .156s ease;
+  background: #f33 !important;
+}
+
+._2ZDUqsleGa-jar5wAYvVzV {
+  color: chartreuse !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  font-family: Fira Sans !important;
+}
+
+._1y3FkDsOHuxLnfkzQ8Dx7o {
+  color: gold !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  font-family: Fira Sans !important;
+}
+
+._9MapCnb0on13nnKfxRdMz {
+  font-size: 12px !important;
+}
+
+._3kaE-lp56xiPtiBK5bJWgr._2f5JzhIau1fYVnCdnF6jed, ._3SoUY-qYPknu6CPGCPf28G._3kaE-lp56xiPtiBK5bJWgr {
+  height: 24px !important;
+}
+
+._1PkXPyxM3Hhk5H6YNvwMa1 {
+  height: 30px;
+  padding-bottom: 1px !important;
+}
+
+._3AhvfFCmTCMeJ_TiEpVcdH {
+  padding: 0 0 0px 0 !important;
+}
+
+
+}

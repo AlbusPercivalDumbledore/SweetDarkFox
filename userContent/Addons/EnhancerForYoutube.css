@@ -1,0 +1,48 @@
+/*+++++ ENHANCER FOR YOUTUBE EXTENSION +++++*/
+
+@-moz-document url-prefix(moz-extension://fd33ca91-9534-44ec-aac1-4b835beccb6f/)
+{
+  header {
+    filter: invert(1) !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #d4d4d4 !important;
+  }
+
+  .extension-icon {
+    filter: invert(1) !important;
+  }
+
+  body[dir="ltr"] svg {
+    filter: invert(1) !important;
+    transform: scale(0.7) !important;
+  }
+
+  body {
+    font-family: Fira Sans !important;
+    font-size: 0.8em !important;
+    color: var(--Dark_TextColor) !important;
+  }
+
+  textarea,
+  select,
+  button {
+    background: var(--Dark_BackgroundColor) !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
+    color: var(--Dark_TextColor) !important;
+    -moz-appearance: none !important;
+  }
+
+  fieldset {
+    border: 1px solid var(--Dark_BorderColor) !important;
+  }
+
+  #cinemamode-page {
+    filter: invert(0.1) !important;
+  }
+
+  #locale,
+  .rate,
+  .donate {
+    display: none !important;
+  }
+}

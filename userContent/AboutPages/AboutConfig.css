@@ -1,0 +1,21 @@
+/* ABOUT:CONFIG */
+
+@-moz-document url-prefix("about:config"), url("chrome://global/content/aboutconfig/aboutconfig.html")
+{
+  :root:dir(ltr) #about-config-search {
+    padding-left: 32px;
+    background: var(--Dark_BackgroundColor) !important;
+  }
+
+  #search-container {
+    background-color: var(--Dark_BackgroundColor) !important;
+  }
+
+  .config-background {
+    background: none !important;
+  }
+
+  .config-help-text {
+    display: none !important;
+  }
+}

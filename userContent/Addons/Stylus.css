@@ -1,0 +1,6 @@
+@-moz-document url-prefix(moz-extension://fa02a161-e361-40b8-85e3-61719a115899/)
+{
+  * {
+    font-family: Fira Sans !important;
+  }
+}

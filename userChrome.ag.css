@@ -1,0 +1,33 @@
+/* Style Tooltips */
+/*https://github.com/aminomancer/uc.css.js/blob/master/userChrome.ag.css#L417-L444*/
+
+tooltip {
+  -moz-default-appearance: none;
+  display: -moz-popup;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  max-width: max(30vw, 40em);
+  padding: 5px;
+  pointer-events: none;
+  --uc-tooltip-inner-padding: 4px 7px 6px 7px;
+}
+
+tooltip:not([position]) {
+  margin-block-start: 16px;
+  margin-inline-start: -5px;
+}
+
+tooltip > description {
+  background-color: #0c0e14;
+  color: #fff;
+  border: 1px solid #181818;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #181818;
+  padding: var(--uc-tooltip-inner-padding, 4px 7px 6px 7px);
+  margin: 0;
+  font-family: "Fira Sans" !important;
+  font-weight: normal !important;
+}

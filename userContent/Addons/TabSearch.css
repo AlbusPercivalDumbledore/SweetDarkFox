@@ -1,0 +1,71 @@
+/*------ TAB SEARCH ADDON ------*/
+
+@-moz-document url-prefix(moz-extension://5f7e1f9f-27ae-4c62-9792-e654ecd47902/popup/index.html)
+{
+  body {
+    border: 0 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    font-family: Fira Sans !important;
+    width: var(--bodyWidth);
+  }
+
+  header {
+    border: 0 !important;
+  }
+
+  .tab-list {
+    font-size: 12px;
+    height: 450px;
+    background-color: var(--Dark_BackgroundColor) !important;
+    border: 0 !important;
+    color: var(--Dark_TextColor) !important;
+  }
+
+  .tab-object {
+    color: #eee !important;
+    width: 21rem !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 0;
+    padding-right: 3rem;
+  }
+
+  .tab-info > p {
+    width: 280px !important;
+    color: gold !important;
+    line-height: 20px !important;
+  }
+
+  .tab-object--selected,
+  .tab-object:hover,
+  .tab-object:focus {
+    background-color: #181818 !important;
+    color: white;
+  }
+
+  .tab {
+    border-left: 5px transparent solid !important;
+  }
+
+  .tab-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2rem;
+    width: 2rem;
+    filter: invert(0.2) !important;
+  }
+
+  input[type="search"] {
+    color: var(--Dark_TextColor) !important;
+    line-height: 2em;
+    width: 300px;
+    background: var(--Dark_BackgroundColor) !important;
+    font-family: Fira Sans !important;
+  }
+
+  .search {
+    border: 2px solid var(--Dark_BorderColor) !important;
+  }
+}

@@ -1,0 +1,73 @@
+canvas {
+  transform: scale(0.4) !important;
+  margin-bottom: -15px !important;
+  margin-top: -5px !important;
+}
+
+.banner-wrapper {
+  display: none !important;
+}
+
+.pointer {
+  font-variant-caps: petite-caps !important;
+  font-family: Fira Sna !important;
+}
+
+.v-application {
+  text-align: center !important;
+  font-family: Fira Sans !important;
+  font-size: 0.85rem !important;
+}
+
+.v-application .mx-2 {
+  margin-right: 2px !important;
+  margin-left: 2px !important;
+}
+
+.daily-weather-wrapper .weather-day {
+  height: 24px !important;
+  width: 250px !important;
+}
+
+.v-application .ma-1 {
+  margin: 2px !important;
+}
+
+.daily-weather-wrapper {
+  width: 250px !important;
+  margin-left: 200px !important;
+}
+
+.rowItem canvas {
+  margin-left: -15px !important;
+}
+
+.v-application .text-h1,
+.v-application .text-h2 {
+  font-family: Fira Sans !important;
+}
+
+.v-application,
+.v-application--wrap,
+body,
+html {
+  width: 600px !important;
+  background: var(--Dark_BackgroundColor) !important;
+}
+
+.weather-radar-wrapper {
+  display: none !important;
+}
+
+.weather-help-wrapper {
+  display: none !important;
+}
+
+.fa.fa-cog {
+  transform: scale(0.5) !important;
+  filter: invert(0.5) !important;
+}
+
+.background-image {
+  display: none !important;
+}

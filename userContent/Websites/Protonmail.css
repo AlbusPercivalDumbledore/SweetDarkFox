@@ -1,0 +1,225 @@
+@-moz-document domain("protonmail.com"), domain("proton.me") {
+  :root,
+  .ui-standard {
+    --width-sidebar: 11em !important;
+
+    --primary: #610520;
+    --primary-contrast: white;
+    --signal-danger: #f5680a;
+    --signal-danger-hover: #fa7923;
+    --signal-danger-active: #ff8b3d;
+    --signal-danger-contrast: white;
+    --signal-warning: #f5d922;
+    --signal-warning-hover: #fae039;
+    --signal-warning-active: #ffe852;
+    --signal-warning-contrast: black;
+    --signal-success: #2fd6b5;
+    --signal-success-hover: #32e5c2;
+    --signal-success-active: #36f5cf;
+    --signal-success-contrast: black;
+    --signal-info: #28acf6;
+    --signal-info-hover: #40b5f6;
+    --signal-info-active: #59bef6;
+    --signal-info-contrast: white;
+    --text-norm: white;
+    --text-weak: #979bb0;
+    --text-hint: #575c75;
+    --text-disabled: #454a61;
+    --text-invert: #262a33;
+    --field-norm: #111 !important;
+    --field-hover: #111 !important;
+    --field-disabled: #34384e;
+    --border-norm: transparent !important;
+    --border-weak: transparent !important;
+    --background-norm: #000 !important;
+    --background-weak: #000 !important;
+    --background-strong: #000 !important;
+    --interaction-norm: #e53265;
+    --interaction-norm-hover: #f04d7a;
+    --interaction-norm-active: #f5678f;
+    --interaction-norm-contrast: white;
+    --interaction-weak: #34384e;
+    --interaction-weak-hover: #454a61;
+    --interaction-weak-active: #575c75;
+    --interaction-default: transparent;
+    --interaction-default-hover: rgba(52, 56, 78, 0.5);
+    --interaction-default-active: rgba(52, 56, 78, 0.7);
+    --shadow-norm-opacity: 0.5;
+    --shadow-lifted-opacity: 0.75;
+    --backdrop-norm: rgba(0, 0, 0, 0.75);
+    --optional-scrollbar-thumb-color: #34384e;
+    --optional-scrollbar-thumb-hover-color: #454a61;
+    --optional-navigation-current-item-text-color: #2fd6b5;
+    --optional-navigation-item-count-background-color: #8838ff;
+    --optional-email-item-read-background-color: #000 !important;
+    --optional-email-item-read-text-color: var(--text-weak);
+  }
+
+  .message-content:not(.plain) {
+    background: #fff;
+    color: #262a33;
+    filter: invert(1) !important;
+  }
+
+  .homepage {
+    filter: invert(1) !important;
+    background: #000 !important;
+  }
+
+  .homepage .hero {
+    filter: invert(1) !important;
+  }
+
+  .homepage #footer {
+    filter: invert(1) !important;
+    background: #000 !important;
+  }
+
+  .header {
+    background-color: var(--header-background-color);
+    color: var(--header-text-color, var(--text-norm));
+    flex-shrink: 0;
+    height: 2.8rem !important;
+    padding: 0.1rem 0.1rem 0.1rem 0 !important;
+  }
+
+  .ui-prominent {
+    --background-norm: #000 !important;
+  }
+
+  .button[title="Special offer"],
+  .button[title="Go to subscription plans"] {
+    display: none !important;
+  }
+
+  .m0-5 {
+    margin: none !important;
+    border-left: 2px solid #212121 !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+
+  .message-header {
+    padding: 0em !important;
+  }
+
+  .message-recipient-item-label {
+    color: chartreuse !important;
+    font-family: Fira Sans !important;
+    font-weight: 600 !important;
+  }
+
+  .message-recipient-item-address {
+    color: chartreuse !important;
+    font-weight: 900 !important;
+  }
+
+  .message-header-to.container-to {
+    color: gold !important;
+    font-family: Fira Sans !important;
+    font-weight: 900 !important;
+  }
+
+  .p0-5 {
+    padding: 0em !important;
+    text-align: right !important;
+  }
+
+  .message-header-extra svg {
+    display: none !important;
+  }
+
+  .button-group[class*="button-group-outline"] {
+    border: 1px solid transparent !important;
+    padding: 0em !important;
+    padding-left: 0em;
+    padding-left: 0.25em !important;
+  }
+
+  .button-group[class*="button-group-outline"] .vr {
+    margin: 0.1428571429em 0.2142857143em;
+    display: none !important;
+  }
+
+  .composer .composer-content--rich-edition {
+    background: #fff;
+    filter: invert(1) !important;
+  }
+
+  .composer .editor-toolbar {
+    max-width: 45.7142857143em;
+    filter: invert(1) !important;
+  }
+
+  .item-firstline {
+    color: gold !important;
+    font-family: Fira Sans !important;
+  }
+
+  .checkbox-fakecheck,
+  .radio-fakeradio {
+    border: 1px solid rebeccapurple !important;
+  }
+
+  .navigation-link,
+  .navigation-link-header-group {
+    display: block;
+    padding: 0.2rem 1em 0.1rem 0.5rem !important;
+  }
+
+  .item-container-row.item-container.active,
+  .item-container-row.item-is-selected,
+  .item-container.item-container.active,
+  .item-container.item-is-selected {
+    background-color: #272a3f !important;
+  }
+
+  .button-large {
+    padding: 0.2em 0em 0.2em !important;
+  }
+
+  .toolbar-button {
+    display: flex;
+    padding-left: 0.7em !important;
+    padding-right: 0.7em !important;
+  }
+
+  .toolbar {
+    --padding-toolbar-button: 1.1428571429em;
+    --padding-toolbar-button-dropdown: 0.8571428571em;
+    background-color: var(--toolbar-background-color);
+    border-bottom: 1px solid var(--toolbar-border-bottom-color);
+    color: var(--toolbar-text-color);
+    height: 2.125rem !important;
+  }
+
+  .toolbar .toolbar-button {
+    border-radius: 2px !important;
+  }
+}
+
+@-moz-document domain("accounts.protonmail.com"), domain("account.proton.me") {
+  .ui-standard {
+    filter: invert(1) !important;
+    background: #fff !important;
+  }
+
+  .sign-layout-bg {
+    background-image: none !important;
+    background: #000 !important;
+  }
+
+  .inputform-container--bigger .inputform-icon-container,
+  .inputform-container--bigger .inputform-suffix-container,
+  .inputform-container--bigger .right-icon,
+  .inputform-container--bigger .select,
+  .inputform-container--bigger input.inputform-field {
+    height: 2.75rem;
+    background: #fff !important;
+  }
+
+  .p1.text-center.mt2.rounded.border.bg-weak {
+    filter: invert(1) !important;
+  }
+}

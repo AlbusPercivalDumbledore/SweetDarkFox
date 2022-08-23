@@ -1,0 +1,72 @@
+/*+++++ PDF VIEWER +++++*/
+
+#toolbarViewer {
+  background-color: var(--Dark_BackgroundColor) !important;
+  font-family: Fira Sans !important;
+}
+
+.dropdownToolbarButton > select {
+  background-color: var(--Dark_ActiveColor) !important;
+  font-family: Fira Sans !important;
+}
+
+.dropdownToolbarButton > select:hover {
+  background-color: var(--Dark_ActiveColor) !important;
+}
+
+.splitToolbarButton > .toolbarButton {
+  transform: scale(0.75) !important;
+}
+
+html[dir="ltr"] #toolbarViewerRight,
+html[dir="rtl"] #toolbarViewerLeft,
+html[dir="ltr"] #toolbarSidebarRight,
+html[dir="rtl"] #toolbarSidebarLeft {
+  float: right;
+  transform: scale(0.8) !important;
+}
+
+html[dir="ltr"] #outerContainer.sidebarOpen #sidebarContainer,
+#thumbnailView,
+#toolbarSidebar,
+#viewerContainer,
+.dropdownToolbarButton > select option {
+  background-color: var(--Dark_BackgroundColor) !important;
+}
+
+.toolbarField.pageNumber {
+  text-align: center !important;
+  font-family: Fira Sans !important;
+}
+
+.toolbarField {
+  background-color: var(--Dark_BackgroundColor) !important;
+  border-color: var(--Dark_BackgroundColor) !important;
+}
+
+:root:not([nostyle])
+  #viewerContainer
+  > #viewer
+  > .page
+  > .canvasWrapper
+  > canvas {
+  filter: invert(100%);
+}
+
+html[dir="ltr"] .secondaryToolbarButton > span {
+  padding-right: 4px;
+  font-family: "Fira Sans" !important;
+  font-size: 1.3rem !important;
+}
+
+.pdfViewer .canvasWrapper {
+  background: var(--Dark_BackgroundColor) !important;
+}
+
+.pdfViewer .textLayer .highlight {
+  background-color: rgba(180, 0, 170, 1) !important;
+}
+
+.pdfViewer .textLayer .highlight.selected {
+  background-color: rgba(0, 100, 0, 1) !important;
+}

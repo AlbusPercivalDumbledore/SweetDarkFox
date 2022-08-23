@@ -1,0 +1,60 @@
+/*+++++ SAVE WEBP AS PNG EXTENSION +++++*/
+
+@-moz-document url-prefix(moz-extension://618c7a6d-4730-4ed3-afe5-4b8f44f3df7c/options.html)
+{
+  * {
+    background: #1b1b1b !important;
+  }
+
+  :root button,
+  select {
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    font-family: Fira Sans !important;
+    padding: 5px !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
+    -moz-appearance: none !important;
+  }
+}
+
+@-moz-document url-prefix(moz-extension://618c7a6d-4730-4ed3-afe5-4b8f44f3df7c/)
+{
+  :root body {
+    margin: 8px 16px;
+    background-color: var(--Dark_BackgroundColor) !important;
+    font-size: 14px !important;
+    color: var(--Dark_TextColor) !important;
+    font-family: "Fira Sans" !important;
+  }
+}
+
+:root .saveWebPasInfo {
+  border: 1px solid var(--Dark_BorderColor) !important;
+  background: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
+  font-size: 1.1rem !important;
+  padding: 10px !important;
+  text-align: center !important;
+}
+
+:root .saveWebPasInfo p {
+  font-family: Fira Sans !important;
+}
+
+:root .saveWebPasbtns button:hover {
+  color: var(--Dark_TextColor) !important;
+  border-color: var(--Dark_BorderColor) !important;
+  background: #181818 !important;
+}
+
+:root .saveWebPasbtns button {
+  transform: scale(1) !important;
+  font-style: normal !important;
+  border-color: var(--Dark_BorderColor) !important;
+  background: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
+  font-family: Fira Sans !important;
+  margin-top: 5px !important;
+  box-shadow: none !important;
+  -moz-appearance: none !important;
+}
