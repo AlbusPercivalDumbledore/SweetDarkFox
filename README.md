@@ -1,9 +1,9 @@
 # SweetDarkFox
 Firefox CSS, based on Sweet Dark GTK theme's colors
 
-![PitchDarkFox]()
+![PitchDarkFox](https://github.com/AlbusPercivalDumbledore/SweetDarkFox/blob/main/Screenshot%20from%202022-08-23%2022-49-29.png)
 
-![AboutFirefox]()
+![AboutFirefox](https://github.com/AlbusPercivalDumbledore/SweetDarkFox/blob/main/Screenshot%20from%202022-08-23%2022-55-51.png)
 
 ## Script, Resources, Utils Folders are from: https://github.com/aminomancer/uc.css.js
 
